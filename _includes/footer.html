@@ -1,0 +1,23 @@
+<!-- Footer Start -->
+
+<footer>
+    <h4>All Categories</h4>
+    {% for categories in site.categories %}
+    <h3> <a class="category" href="{{site.baseurl}}/categories/{{categories[0] | downcase}}.html">
+        {{ categories[0] }}
+    </a></h3>
+
+    {% endfor %}
+
+    {% include social-buttons.html %}
+
+    <p><br><br></p>
+
+    <div class="container text-center">
+        <p>Copyright &copy; {{ site.author }} {{ site.time | date: "%Y" }}</p>
+    </div>
+</footer>
+
+<p></p>
+
+<!-- Footer End -->
