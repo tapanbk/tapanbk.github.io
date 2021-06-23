@@ -92,6 +92,7 @@ a {
     #logo_nav {
         height: 30px;
         margin-top: -5px;
+        padding: 1px;
     }
 
     .navbar-toggle {
@@ -166,6 +167,9 @@ a {
 	    #logo_nav {
               height: 30px;
               margin-top: -5px;
+              padding: 1px;
+              border: unset;
+              background-color: unset;
             }
         }
     }
@@ -287,9 +291,10 @@ a {
     /* Added in { Personal } */
     &#post {
         div.author img {
-            border: 0px;
+            border: 0;
             margin-bottom: 20px;
             padding: 4px;
+            width: 15%;
         }
     }
 }
