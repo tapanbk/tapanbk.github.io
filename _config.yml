@@ -43,7 +43,7 @@ favicon: "/img/favicon.ico"
 black-favicon: False
 
 # page top right side logo bigger one github one
-logo: "/img/tapanbk_small_2.jpg" # leave blank if you don't want a logo
+logo: "img/tapanbk_small_2.jpg" # leave blank if you don't want a logo
 
 # Blur background one
 background-img: "../img/tapanbk3.jpg"
@@ -63,7 +63,7 @@ lines: # You can add HTML Tags in the Text
   - text: "The lower you fall, the higher you'll fly."
   - text: "Where’s your will to be weird?"
   - text: "Be Awesome"
-  - text: "Don’t worry if it doesn’t work right. If everything did, you’d be out of a job."
+  - text: "Don’t worry if it does n’t work right. If everything did, you’d be out of a job."
   - text: "In order to understand recursion, one must first understand recursion"
   - text: "Things are not always #000000 and #FFFFFF"
   - text: "If at first you don’t succeed; call it version 1.0"
@@ -184,7 +184,7 @@ phone: "+977-9849716660"
 # This works best when your author blurb image has a transparent background, or matches your site background color.
 
 # if the author_blurb is not set, then this feature is skipped
-author_blurb: "Tapan B.K. is an awesome person. He lives in Kathmandu Nepal, where he works on awesome projects. In his spare time, John likes to watch movies, visit new places."
+author_blurb: "Tapan B.K. is Full Stack Software Engineer. In his spare time, John likes to watch movies, visit new places."
 author_blurb_image: "/img/author.png"
 
 ##################
