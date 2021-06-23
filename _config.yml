@@ -43,7 +43,7 @@ favicon: "/img/favicon.ico"
 black-favicon: False
 
 # page top right side logo bigger one github one
-logo: "img/tapanbk_small_2.jpg" # leave blank if you don't want a logo
+logo: "/img/tapanbk_small_2.jpg" # leave blank if you don't want a logo
 
 # Blur background one
 background-img: "../img/tapanbk3.jpg"
@@ -136,7 +136,7 @@ pinterest-share: True
 pocket-share: True
 vkontakte-share: True
 
-disqus-shortname: "personal-jekyll-theme"
+disqus-shortname: "tapan-bk-github"
 
 syntax-highlight: True
 
@@ -240,6 +240,5 @@ paginate_path: "blog/page:num/"
 sass:
   style: compressed
 
-gems:
-  - jekyll-paginate
-  - jemoji
+gems: [jekyll-paginate, jemoji]
+
