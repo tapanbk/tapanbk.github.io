@@ -12,7 +12,7 @@ url: "https://tapanbk.github.io"
 #
 # NB! Without this *nothing* will work, because it's used in every path :)
 
-baseurl: /blog
+#baseurl: /blog
 
 # Google tracking id
 
@@ -43,7 +43,7 @@ favicon: "/img/favicon.ico"
 black-favicon: False
 
 # page top right side logo bigger one github one
-logo: "/img/tapanbk_small_2.jpg" # leave blank if you don't want a logo
+logo: "img/tapanbk_small_2.jpg" # leave blank if you don't want a logo
 
 # Blur background one
 background-img: "../img/tapanbk3.jpg"
