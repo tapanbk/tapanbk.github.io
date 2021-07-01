@@ -1,7 +1,8 @@
 {% if jekyll.environment == "production" %}
     {% if site.google-adsense-id %}
     <!-- Google Adsense Start -->
-        <script data-ad-client="{{ google-adsense-id }}" async
+    <script data-ad-client='{{ site.google-adsense-id }}' async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- Google Adsense Ends -->
     {% endif %}
 {% endif %}
