@@ -186,7 +186,7 @@ phone: "+977-9849716660"
 # This works best when your author blurb image has a transparent background, or matches your site background color.
 
 # if the author_blurb is not set, then this feature is skipped
-author_blurb: "Tapan B.K. is Full Stack Software Engineer. In his spare time, John likes to watch movies, visit new places."
+author_blurb: "Tapan B.K. is Full Stack Software Engineer. In his spare time, Tapan likes to watch movies, visit new places."
 author_blurb_image: "/img/author.png"
 
 ##################
