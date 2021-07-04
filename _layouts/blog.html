@@ -22,11 +22,22 @@
           {% endfor %}
         </div>
 
+
         {% include pagination.html %}
+
+          <h4 class="category">Categories</h4>
+          {% for categories in site.categories %}
+          <h6>
+            <a class="category" href="{{site.baseurl}}/categories/{{categories[0] | downcase}}.html">
+              {{ categories[0] }}s</a>
+          </h6>
+          {% endfor %}
 
         </div>
       </div>
     </section>
+
+
 
     {% include footer.html %}
 

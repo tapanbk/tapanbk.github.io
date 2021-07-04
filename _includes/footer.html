@@ -1,18 +1,33 @@
-<footer>
-    <h4>All Categories</h4>
-    {% for categories in site.categories %}
-    <h5>
-        <a class="category" href="{{site.baseurl}}/categories/{{categories[0] | downcase}}.html">
-        {{ categories[0] }}s</a>
-    </h5>
-    {% endfor %}
-
-
-    <p><br></p>
-    {% include social-buttons.html %}
-    <p><br></p>
-    <div class="container text-center">
-        <p>Copyright &copy; {{ site.author }} {{ site.time | date: "%Y" }}</p>
+<footer style="background-color: #070617; padding-top: 3rem; padding-bottom: 2rem; margin-top: 3rem">
+    <div class="container" >
+        <div class="row">
+            <div class="col-md-4">
+                <h4 class="category">Categories</h4>
+                {% for categories in site.categories %}
+                <h6>
+                    <a class="category" href="{{site.baseurl}}/categories/{{categories[0] | downcase}}.html">
+                        {{ categories[0] }}s</a>
+                </h6>
+                {% endfor %}
+            </div>
+            <div class="col-md-4">
+                <h5>Resources</h5>
+                <h6><a class="category" href="{{site.baseurl}}/sitemap.xml" target="_blank">Site Map</a></h6>
+                <h6><a class="category" href="{{site.baseurl}}/feed.xml" target="_blank">RSS Feed</a></h6>
+            </div>
+            <div class="col-md-4">
+                <h5>My Social Links</h5>
+                {% include social-buttons.html %}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="text-center">
+                    <p class="small">Copyright &copy; {{ site.author }} {{ site.time | date: "%Y" }}</p>
+                </div>
+            </div>
+        </div>
     </div>
 </footer>
+
 
