@@ -1,11 +1,14 @@
 ---
 layout: post
 section-type: post
-title: Ultimate Guide to mysqldump and its examples
+title: Ultimate Guide to mysqldump with examples
 category: database
 tags: [ 'mysql', 'server', 'database_dump' ]
+permalink: ultimate-guide-to-mysql-dump-with-examples
+description: mysql dump and mysql dump examples
 ---
 
+<img src="{{site.baseurl}}/img/posts/database-dump-2.jpg" class="img-thumbnail img-rounded" height="400px" alt="database-dump">
 #### What is Mysqldump?
 
 <span style="color: #00fae0">MySQL</span> is widely used relational database management system. Mysql can store from the

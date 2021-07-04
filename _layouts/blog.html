@@ -16,7 +16,8 @@
 
         {{ page.content | markdownify }}
 
-        <div>
+
+          <div>
           {% for post in paginator.posts %}
             {% include post-list.html%}
           {% endfor %}

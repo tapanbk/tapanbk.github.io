@@ -1,14 +1,16 @@
 ---
 layout: post
 section-type: post
-title: Ultimate guides to crontab and awesome example
-category: Linux
+title: Ultimate guides to crontab and some awesome example
+category: server
 tags: [ 'linux', 'crontab', 'system admin' ]
+permalink: ultimate-guides-to-crontab-and-some-awesome-examples
+description: Ultimate guide to crontab and their examples
 ---
 
+<img src="{{site.baseurl}}/img/posts/cron-jobs.jpg" class="img-thumbnail img-rounded" height="400px" alt="database-dump">
 ## Cron  jobs
-
-<span style="color: #00fae0">Cron</span> also known as cron jobs is a built-in software utility that is used to schedule a time-based job in Unix-like
+<span class="important">Cron</span> also known as cron jobs is a built-in software utility that is used to schedule a time-based job in Unix-like
 computer operating systems. Users setup and maintain software environments to use cron to schedule jobs which could be
 either commands or shell scripts to run periodic tasks at fixed time, date or interval. It automates system
 administration, system maintenance tasks or repetitive like sending the register email, taking database backup, sending
@@ -18,7 +20,7 @@ notifications.
 
 Crontab or cron table file handles actions of cron. The crontab is a configuration file which specifies shell commands
 to run periodic tasks at a given schedule. Each user can have their own individual crontab files. There is also a
-system-wide crontab file usually located in <span style="color: #00fae0">/etc</span>.
+system-wide crontab file usually located in <span class="important">/etc</span>.
 
 ### Prerequisites for cron jobs
 1. A linux system
@@ -55,9 +57,9 @@ followed by a shell command to execute and optional output
 
 So, the parts of a cron command are:
 
-1. The first five fields <span style="color: #00fae0">a b c d e</span> specify the time/date and recurrence of the job.
-2. In the second section, the <span style="color: #00fae0">/directory/command <span> specifies the location and script you want to run.
-3. The final segment <span style="color: #00fae0">output</span> is optional. It defines how the system notifies the user of the job completion
+1. The first five fields <span class="important">a b c d e</span> specify the time/date and recurrence of the job.
+2. In the second section, the <span class="important">/directory/command <span> specifies the location and script you want to run.
+3. The final segment <span class="important">output</span> is optional. It defines how the system notifies the user of the job completion
 
 ### Cron Job Time Format
 
@@ -74,7 +76,7 @@ So, the parts of a cron command are:
 
 #### RUN EVERY MINUTE
 
-The <span style="color: #00fae0">* * * * *</span> symbol means to run on every occurrence. It means 
+The <span class="important">* * * * *</span> symbol means to run on every occurrence. It means 
 * on every minute 
 * of every hour 
 * on each day of the month 
@@ -130,14 +132,14 @@ You can specify multiple timestamps by comma separated
 
 #### RUN yearly
 
-@yearly is similar to <span style="color: #00fae0">0 0 1 1 *</span> as it will run at first minute of every year. It can
+@yearly is similar to <span class="important">0 0 1 1 *</span> as it will run at first minute of every year. It can
 be used to send the year greetings to the customers or friends.
 
     @yearly /path/to/executable/script.py
 
 #### RUN monthly
 
-<span style="color: #00fae0">@monthly</span> timestamp is similar to <span style="color: #00fae0">0 0 1 * *</span> as
+<span class="important">@monthly</span> timestamp is similar to <span class="important">0 0 1 * *</span> as
 it will execute in the first minute of the month. It can be used to automate the tasks like paying bills or send invoice
 to the customers.
 
@@ -145,7 +147,7 @@ to the customers.
 
 #### RUN weekly
 
-<span style="color: #00fae0">@weekly</span> timestamp is similar to <span style="color: #00fae0">0 0 * * mon</span> as
+<span class="important">@weekly</span> timestamp is similar to <span class="important">0 0 * * mon</span> as
 it will execute a task in the first minute of the week. It may be useful to do weekly tasks like the cleanup of the
 system etc.
     
@@ -153,21 +155,21 @@ system etc.
 
 #### RUN daily
 
-<span style="color: #00fae0">@daily</span> timestamp is similar to <span style="color: #00fae0">0 0 * * *</span> as
+<span class="important">@daily</span> timestamp is similar to <span class="important">0 0 * * *</span> as
 it will execute a task in the first minute of every day. It may be useful to do daily tasks.
     
     @daily /path/to/executable/script.py
 
 #### RUN hourly
 
-@hourly timestamp is similar to <span style="color: #00fae0">0 * * * *</span> as it will execute a task in the first
+@hourly timestamp is similar to <span class="important">0 * * * *</span> as it will execute a task in the first
 minute of every hour, It may be useful to do hourly tasks.
 
      @hourly /path/to/executable/script.py
 
 #### RUN tasks on reboot
 
-<span style="color: #00fae0">@reboot</span> is useful for those tasks which you want to run on your system startup to
+<span class="important">@reboot</span> is useful for those tasks which you want to run on your system startup to
 start tasks in the background automatically when system starts.
 
     @reboot /path/to/executable/script.py
@@ -207,10 +209,10 @@ or
 ### View cron logs
 
 The location of log file differ by linux distribution. The log file is mostly found at:
-* The  <span style="color: #00fae0">journalctl</span> output systemd's <span style="color: #00fae0">cron.service</span>
-* Log files in <span style="color: #00fae0">/var/log/</span> like <span style="color: #00fae0">/var/log/cron</span>
+* The  <span class="important">journalctl</span> output systemd's <span class="important">cron.service</span>
+* Log files in <span class="important">/var/log/</span> like <span class="important">/var/log/cron</span>
 
-#### To check log files using <span style="color: #00fae0">journalctl</span> command:
+#### To check log files using <span class="important">journalctl</span> command:
 
     journalctl -u cron  #  View systemd logging
     journalctl -u cron -f   # Tail systemd log for cron
@@ -219,7 +221,7 @@ The location of log file differ by linux distribution. The log file is mostly fo
 
     tail -f /var/log/cron
 
-Cron Schedules edited with <span style="color: #00fae0">crontab -e</span> are stored in <span style="color: #00fae0">/var/spool/cron</span> and they should
+Cron Schedules edited with <span class="important">crontab -e</span> are stored in <span class="important">/var/spool/cron</span> and they should
 never be modified directly
 
 ### Backup cron to text file:
@@ -233,7 +235,7 @@ never be modified directly
 
 ### Tips
 * Always use full path of files and executables 
-* Scripts must be executable. You can make script executable by running (<span style="color: #00fae0">sudo chmod +x filename</span>)
+* Scripts must be executable. You can make script executable by running (<span class="important">sudo chmod +x filename</span>)
 * If several steps are needed, put all the steps in the script files and call the script file. 
 *  Use quotation marks for anything with spaces.
 * Use the lowest privilege user possible. Do not run jobs as root unless absolutely needed.
