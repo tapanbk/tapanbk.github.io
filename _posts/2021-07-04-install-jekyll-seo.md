@@ -8,6 +8,8 @@ description: Install jekyll seo tag in the jekyll sites
 permalink: install-jekyll-seo-tag-in-the-jekyll-sites
 ---
 
+Guide to install jekyll seo Tag in the jekyll sites.
+<!--more-->
 
 <img src="https://jekyllrb.com/img/jekyll-og.png" class="img-thumbnail img-rounded" height="400px" alt="jekyll">
 
