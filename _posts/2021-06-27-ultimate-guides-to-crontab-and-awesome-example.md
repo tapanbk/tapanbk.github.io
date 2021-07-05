@@ -8,6 +8,8 @@ permalink: ultimate-guides-to-crontab-and-some-awesome-examples
 description: Ultimate guide to crontab and their examples
 ---
 
+Read about ultimate guides to crontab with some awesome example
+<!--more-->
 <img src="{{site.baseurl}}/img/posts/cron-jobs.jpg" class="img-thumbnail img-rounded" height="400px" alt="database-dump">
 ## Cron  jobs
 <span class="important">Cron</span> also known as cron jobs is a built-in software utility that is used to schedule a time-based job in Unix-like

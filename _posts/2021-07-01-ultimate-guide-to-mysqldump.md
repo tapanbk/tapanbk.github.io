@@ -8,6 +8,9 @@ permalink: ultimate-guide-to-mysql-dump-with-examples
 description: mysql dump and mysql dump examples
 ---
 
+Read an article on ultimate guide on mysql dump and some examples
+<!--more-->
+
 <img src="{{site.baseurl}}/img/posts/database-dump-2.jpg" class="img-thumbnail img-rounded" height="400px" alt="database-dump">
 #### What is Mysqldump?
 
