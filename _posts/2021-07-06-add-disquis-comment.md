@@ -55,3 +55,36 @@ You can also update the comment moderation settings. You can set the moderation 
 Like wise, Disqus can be installed on other websites, blog or web apps.
 
 
+There are quite pros and cons of using third part disqus in our website. 
+
+Some pros of the using Disqus in website are:
+* The comments are posted and updated in real time without any delay.
+* Disqus allows threaded comments. This allows groups discussion within the nested threads.
+* Disqus can be configured to get the notification for the comments that they are engaged. The notifications setting can be according to preferences of commenter and administrators.
+* Administrators can update the setting to moderate the spam, abusive comments.
+* Disqus have dedicated control panel to approve the comments.
+* It has IP blocking and user blocking system to prevent spams  
+* Disqus allows user to login using social medias like facebook, Twitter, gmail and even disqus itself.
+* Disqus allows user to like the comments that lets readers to like the comments.
+* It's very easy to install
+* It is mobile responsive and mobile friendly.
+
+Some cons of the using Disqus in website are:
+
+* It may need to keep upto date as it can become security issue
+* It is difficult to customize the design to match the site design.
+* One of the main draw back is their ads on the basic plan. They can be deactivated through premium plan. It inserts ad in between comments, sometime without any comments and before comments section starts
+* The data of the user who commented on the site can be breached or misused.
+* Disqus does not allow guest commenting which reduces the comment engagement
+* Disqus takes huge amount of additional resource to just run the comment systems.
+
+<img src="{{site.baseurl}}/img/posts/discuss-site-resource-used.png" class="img-thumbnail img-rounded" height="400px"
+alt="resources used by disqus">
+
+
+* Disqus are tracking all the metrics somehow which you may not want them to track.
+
+
+
+
+
