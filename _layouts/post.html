@@ -30,7 +30,7 @@
           </h4>
 
           <section class="text-justify">
-            {{ page.content | markdownify }}
+            {{ page.content | remove_first:page.excerpt | markdownify }}
           </section>
           <br>
           <p>I hope this was very helpful to you. Please feel free to leave comments, suggestions and point my mistakes
