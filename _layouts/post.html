@@ -38,9 +38,7 @@
           </p><br>
 
           {% include share.html %}
-          {% if jekyll.environment == "production" and  site.show_comments%}
-            {% include comments.html %}
-          {% endif %}
+          {% include comments.html %}
           <hr />
 
           {% if site.author_blurb %}
