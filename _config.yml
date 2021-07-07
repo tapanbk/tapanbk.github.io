@@ -138,9 +138,9 @@ pinterest-share: True
 pocket-share: True
 vkontakte-share: True
 
-disqus-shortname: "tapan-bk-github"
-
 syntax-highlight: True
+
+show_comments : True
 
 ############
 # Timeline #

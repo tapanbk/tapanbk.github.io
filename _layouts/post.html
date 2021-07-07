@@ -4,7 +4,7 @@
   {% include head.html %}
 
   <body>
-
+    {% include facebook_comment_script.html %}
     {% include navigation.html %}
 
     <section id="post" class="container content-section text-center">
@@ -38,11 +38,9 @@
           </p><br>
 
           {% include share.html %}
-          {% if jekyll.environment == "production" %}
+          {% if jekyll.environment == "production" and  site.show_comments%}
             {% include comments.html %}
           {% endif %}
-
-
           <hr />
 
           {% if site.author_blurb %}
