@@ -70,8 +70,8 @@ So, the parts of a cron command are:
 | [a] – Minute | 0 – 59       | 2 * * * *        | The cron job is initiated every time the system clock shows 10 in the minute’s position. |
 | [b] – Hour  | 0 – 23     |  0 2 * * *	| The cron job runs any time the system clock shows 2am (2pm would be coded as 14).|
 | [c] – Day      | 0 – 31 | 0 0 2 * *     |  The day of the month is 2 which means that the job runs every 2nd day of the month.|
-| [d] – Month | 0 = none and 12 = December    | 0 0 0 2 *	 |  The numerical month is 7 which determines that the job runs only in February. |
-| [e] – Day of the Week | 0 = Sunday and 7 = Sunday     | 0 0 2 * *    | 2 in the current position means that the job would only run on Tuesday. |
+| [d] – Month | 0 = none and 12 = December    | 0 0 0 2 *	 |  The numerical month is 2 which determines that the job runs only in February. |
+| [e] – Day of the Week | 0 = Sunday and 7 = Sunday     | 0 0 0 * 2    | 2 in the current position means that the job would only run on Tuesday. |
 
 
 ## Examples:
