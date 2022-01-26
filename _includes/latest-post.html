@@ -12,15 +12,42 @@
             </a>
           .</small>
           <strong> <a href="{{site.baseurl}}{{ post.url }}">{{post.title}} </a> </strong>
-          <small> <a href="{{site.baseurl}}{{post.url}}#disqus_thread">Comments</a></small>
         </h4>
 
-        <section class="text-justify">
-          {{ post.excerpt | strip_html | markdownify | truncatewords: site.post-preview-words }}
-        </section>
 
-        <h4><a href="{{site.baseurl}}/blog/">Archive</a></h4>
+        {% assign post = site.posts[1] %}
+        <h4> <strong> {{ post.date | date_to_string }} </strong>
+          <small>.
+            <a class="category" href="{{site.baseurl}}/categories/{{post.category | downcase}}.html">
+              {{ post.category }}
+            </a>
+            .</small>
+          <strong> <a href="{{site.baseurl}}{{ post.url }}">{{post.title}} </a> </strong>
+        </h4>
+
+        {% assign post = site.posts[2] %}
+        <h4> <strong> {{ post.date | date_to_string }} </strong>
+          <small>.
+            <a class="category" href="{{site.baseurl}}/categories/{{post.category | downcase}}.html">
+              {{ post.category }}
+            </a>
+            .</small>
+          <strong> <a href="{{site.baseurl}}{{ post.url }}">{{post.title}} </a> </strong>
+        </h4>
       </div>
     </div>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1" style="margin-top: 4rem">
+      <h4>All Categories</h4>
+      {% for categories in site.categories %}
+      <h5>
+        <a class="category" href="{{site.baseurl}}/categories/{{categories[0] | downcase}}.html">
+          {{ categories[0] }}s</a>
+      </h5>
+      {% endfor %}
+    </div>
+  </div>
+  <h4  style="margin-top: 3rem"><a href="{{site.baseurl}}/blog/">Archives</a></h4>
+
 </section>
 
