@@ -66,6 +66,13 @@ To serve across lan (requires su to forward the port 4000 over lan):
 ```shell
 ./scripts/serve-lan-production
 ```
+### Generate tags and categories
+```shell
+ ./scripts/generate-tags
+```
+```shell
+ ./scripts/generate-categories 
+```
 
 ### Docker
 
