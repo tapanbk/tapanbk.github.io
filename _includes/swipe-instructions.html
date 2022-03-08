@@ -4,9 +4,9 @@
     <i id="hand-swipe" class="fa fa-hand-o-up"></i>
     <p><strong>
     {% if page.section-type == "blog" %}
-      You can navigate the archive post by swiping left or right?
-    {% elsif page.section-type == "post" %}
-      You can navigate the post by swiping left or right?
+      Swipe left or right to navigate to next or previous archive post
+      {% elsif page.section-type == "post" %}
+      Swipe left or right to navigate to next or previous post
     {% endif %}
     </strong></p>
     <button type="button" class="btn btn-default ok-btn close-swipe-instruction">
