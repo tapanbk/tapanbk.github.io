@@ -17,46 +17,49 @@ class="img-thumbnail img-rounded" height="400px" alt="Distance between two locat
 based on their latitude and longitude. This tools helps to get the distance in straight line.
 </p>
 
-<div class="row">
-    <div class="col-md-6">
-        <div class="form-group">
-            <label for="hexField">Origin Latitude and Longitude separated by comma</label>
-            <input type="text" class="form-control" id="originLocation"
-                placeholder="Origin Location" aria-describedby="originLocationBlock">
+<div class="jumbotron distance-calculator-form">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="hexField">Origin Latitude and Longitude separated by comma</label>
+                <input type="text" class="form-control" id="originLocation"
+                    placeholder="Origin Location" aria-describedby="originLocationBlock">
+                    <br>
+                    <small id="originLocationBlock" class="mt-4 d-none">
+                            <div class="alert alert-danger" role="alert">
+                             Origin location is not valid
+                            </div>
+                    </small>
+            </div>
+        </div>
+       <div class="col-md-6">
+            <div class="form-group">
+                <label for="hexField">Destination Latitude and Longitude separated by comma</label>
+                <input type="text" class="form-control" id="destinationLocation"
+                placeholder="Destination Location" aria-describedby="destinationLocationBlock">
                 <br>
-                <small id="originLocationBlock" class="mt-4 d-none">
-                        <div class="alert alert-danger" role="alert">
-                         Origin location is not valid
-                        </div>
+                <small id="destinationLocationBlock" class="mt-2 d-none">
+                            <div class="alert alert-danger" role="alert">
+                             Destination location is not valid
+                            </div>
                 </small>
+            </div>
         </div>
     </div>
-   <div class="col-md-6">
-        <div class="form-group">
-            <label for="hexField">Destination Latitude and Longitude separated by comma</label>
-            <input type="text" class="form-control" id="destinationLocation"
-            placeholder="Destination Location" aria-describedby="destinationLocationBlock">
-            <br>
-            <small id="destinationLocationBlock" class="mt-2 d-none">
-                        <div class="alert alert-danger" role="alert">
-                         Destination location is not valid
-                        </div>
-            </small>
+    
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+            <button type="button" class="btn btn-primary" id="distanceButtonSubmit">Submit</button>
+            </div>
         </div>
     </div>
 </div>
 
-<div class="row">
-    <div class="col-md-12">
-        <div class="form-group">
-        <button type="button" class="btn btn-primary" id="distanceButtonSubmit">Submit</button>
-        </div>
-    </div>
-</div>
 
 
 <div class="row d-none" id="calculatedDistanceCard">
-    <div class="col-md-6 text-primary">
+    <div class="col-md-12 text-primary">
         <div class="jumbotron">
             <h4 class="display-6">Calculated distances</h4>
             <p class="lead">
@@ -120,3 +123,9 @@ based on their latitude and longitude. This tools helps to get the distance in s
             'miles': parseFloat(dist * 0.868).toFixed(2)
         }
     }
+
+<style>
+    .jumbotron{
+        background-color: #1d3752;
+    }
+</style>
