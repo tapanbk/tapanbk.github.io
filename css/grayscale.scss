@@ -387,17 +387,17 @@ footer {
     }
 }
 
-::-moz-selection {
-    text-shadow: none;
-    background: #fcfcfc;
-    background: rgba($font-color, 0.2);
-}
+//::-moz-selection {
+//    text-shadow: none;
+//    background: #fcfcfc;
+//    background: rgba($font-color, 0.2);
+//}
 
-::selection {
-    text-shadow: none;
-    background: #fcfcfc;
-    background: rgba($font-color, 0.2);
-}
+//::selection {
+//    text-shadow: none;
+//    background: #fcfcfc;
+//    background: rgba($font-color, 0.2);
+//}
 
 img::selection {
     background: transparent;
@@ -521,4 +521,6 @@ body {
     }
 }
 
-
+.d-none{
+    display: none;
+}
