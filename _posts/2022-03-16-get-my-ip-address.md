@@ -28,8 +28,8 @@ class="img-thumbnail img-rounded" height="400px" alt="What is my ip address">
 <h3>  JavaScript Code to get  your public IP address </h3>
     
     // Get the current public IP address details
-    const url = 'http://ip-api.com/json';
-    $.getJSON('http://ip-api.com/json', function(data) {
+    const url = 'https://ipinfo.io/json?token="your-token"';
+    $.getJSON(url, function(data) {
         const location_data = JSON.stringify(data, null, 2);
     });
 
