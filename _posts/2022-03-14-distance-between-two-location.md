@@ -21,7 +21,7 @@ based on their latitude and longitude. This tools helps to get the distance in s
     <div class="row">
         <div class="col-md-6">
             <div class="form-group">
-                <label for="hexField">Origin Latitude and Longitude separated by comma</label>
+                <label for="originLocation">Origin Latitude and Longitude separated by comma</label>
                 <input type="text" class="form-control" id="originLocation"
                     placeholder="Origin Location" aria-describedby="originLocationBlock">
                     <br>
@@ -34,7 +34,7 @@ based on their latitude and longitude. This tools helps to get the distance in s
         </div>
        <div class="col-md-6">
             <div class="form-group">
-                <label for="hexField">Destination Latitude and Longitude separated by comma</label>
+                <label for="destinationLocation">Destination Latitude and Longitude separated by comma</label>
                 <input type="text" class="form-control" id="destinationLocation"
                 placeholder="Destination Location" aria-describedby="destinationLocationBlock">
                 <br>
