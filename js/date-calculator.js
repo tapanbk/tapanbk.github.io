@@ -87,7 +87,7 @@
             ageString = age.years + yearString + " " + age.days + dayString + " ";
         else if ((age.years == 0) && (age.months > 0) && (age.days == 0))
             ageString = age.months + monthString + " ";
-        else ageString = "Oops! Could not calculate age!";
+        else ageString = "Oops! Could not calculate age. Something wrong with the start date and end date!";
         ageCard.querySelector('.jumbotron').innerHTML = `<h5>${ageString}</h5>`;
     }
 })();

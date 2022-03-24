@@ -1,25 +1,30 @@
 ---
 layout: post
 section-type: post
-title:  Tool to get Date Duration difference between two dates in years, months and days
+title:  Tool to get Date Duration between two dates in years, months and days
 category: server
 tags: ['Tool', 'JavaScript' ]
 permalink: tool-to-get-date-duration-between-two-dates
-description: Tool to get Date Duration
+description: Date Duration between two dates in years, months and days
 ---
 Date Duration difference between two dates in years, months and days
 <!--more-->
 
 <img src="{{site.baseurl}}/img/posts/date-duration-calculator.png" width="100%"
 class="img-thumbnail img-rounded" height="400px" alt="What is my ip address">
+<section class="date-calculator-description">
+    <p>This tool helps to get the date duration in years, months and  days based on the start date and end date passed.
+    It takes the start date and end date and find the difference in years, months and days
+    </p>
+    <p>The start Date is not necessary to be before the end date.  The end date could come before the start date. This
+    tools helps to find the difference between two dates in years, months and days. 
+    </p>
+    <p>By default, the end date is set to current date</p>
+</section> 
 
-<p>This tool helps to get the date duration in years, months and  days based on the start date and end date passed.
-The start Date is not necessary to be before the end date.  The end date could come before the start date. This
-tools helps to find the difference between two dates in years, months and days. By default, the end date is set to 
-current date
-</p>
-
-<div class="jumbotron age-calculator-form">
+<section class="date-calculator-section">
+    <h3>Date Difference Calculator</h3>
+    <div class="jumbotron age-calculator-form">
     <div class="row">
         <div class="col-md-6">
             <div class="row">
@@ -51,7 +56,17 @@ current date
         </div>
     </div>
 </div>
+</section>
 
+
+<section class="date-calculator-finder-steps">
+    <h4>Steps to find the date duration between two dates</h4>
+    <ol>
+        <li>Enter start date and end date</li>
+        <li>Hit Enter</li>
+        <li>The date difference is obtained on the right side section in years, months and days</li>
+    </ol>
+</section>
 
 
 <style>
