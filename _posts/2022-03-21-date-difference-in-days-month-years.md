@@ -4,7 +4,7 @@ section-type: post
 title:  Tool to get Date Duration between two dates in years, months and days
 category: server
 tags: ['Tool', 'JavaScript' ]
-permalink: tool-to-get-date-duration-between-two-dates
+permalink: tool-to-get-date-duration-between-two-dates-years-months-and-days
 description: Date Duration between two dates in years, months and days
 ---
 Date Duration difference between two dates in years, months and days
@@ -42,13 +42,13 @@ alt="Date Duration difference between two dates in years, months and days">
                     <div class="form-group">
                         <label for="endDateField">End Date</label>
                         <input type="date" class="form-control" id="endDateField"
-                            placeholder="DOB" aria-describedby="endDateFieldBlock">
+                            placeholder="End Date" aria-describedby="endDateFieldBlock">
                             <br>
                     </div>
                 </div>
                 <div class="col-md-12">
                     <div class="form-group">
-                            <button type="button" class="btn btn-primary" id="calculateAgeButton">Find Age</button>
+                            <button type="button" class="btn btn-primary" id="calculateAgeButton">Calculate</button>
                     </div>
                 </div>
             </div>
@@ -75,7 +75,11 @@ alt="Date Duration difference between two dates in years, months and days">
     .jumbotron{
         background-color: #1d3752;
     }
+
     #ageCard{
-        border-left: 1px solid antiquewhite;
+        border-left: 1px solid #337ab7;
+    }
+   #ageCard .jumbotron{
+        padding-bottom: 1px !important;;
     }
 </style>

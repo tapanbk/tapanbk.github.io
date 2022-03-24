@@ -220,8 +220,14 @@ function addTohistory() {
 {% endif %}
 
 
-{% if page.permalink == "tool-to-get-date-duration-between-two-dates" %}
-<script src="{{site.baseurl}}/js/date-calculator.js"></script>
+{% if page.permalink == "tool-to-get-date-duration-between-two-dates-years-months-and-days" %}
+<script src="{{site.baseurl}}/js/date-calculator-year-month.js"></script>
 {% endif %}
+
+
+{% if page.permalink == "tool-to-get-date-duration-between-two-dates-in-hours-minutes-seconds-and-milliseconds" %}
+  <script src="{{site.baseurl}}/js/date-calculator-in-seconds.js"></script>
+{% endif %}
+
 
 
