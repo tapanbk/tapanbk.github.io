@@ -2,7 +2,7 @@
 layout: post
 section-type: post
 title:  What Is My Ip Address?
-category: Server
+category: server
 tags: ['Map' ,'Tool', 'JavaScript', 'Frontend' ]
 permalink: get-my-ip-address
 description: get my ip address. What is My Ip Address

@@ -2,7 +2,7 @@
 layout: post
 section-type: post
 title:  Tool to get Date Duration difference between two dates in years, months and days
-category: Server
+category: server
 tags: ['Tool', 'JavaScript' ]
 permalink: tool-to-get-date-duration-between-two-dates
 description: Tool to get Date Duration
