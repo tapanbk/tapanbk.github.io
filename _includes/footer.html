@@ -1,7 +1,7 @@
 <footer>
     <h4>All Categories</h4>
     {% for categories in site.categories %}
-    <h5>
+    <h5 class="uppercase">
         <a class="category" href="{{site.baseurl}}/categories/{{categories[0] | downcase}}.html">
         {{ categories[0] }}s</a>
     </h5>

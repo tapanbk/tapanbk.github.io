@@ -40,14 +40,14 @@
     <div class="col-md-10 col-md-offset-1" style="margin-top: 4rem">
       <h4>All Categories</h4>
       {% for categories in site.categories %}
-      <h5>
+      <h5 class="uppercase">
         <a class="category" href="{{site.baseurl}}/categories/{{categories[0] | downcase}}.html">
           {{ categories[0] }}s</a>
       </h5>
       {% endfor %}
     </div>
   </div>
-  <h4  style="margin-top: 3rem"><a href="{{site.baseurl}}/blog/">Archives</a></h4>
+  <h4  style="margin-top: 3rem" class="uppercase"><a href="{{site.baseurl}}/blog/">Archives</a></h4>
 
 </section>
 

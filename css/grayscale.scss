@@ -30,7 +30,6 @@ h4,
 h5,
 h6 {
     margin: 0 0 16px;
-    text-transform: uppercase;
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
@@ -318,7 +317,8 @@ a {
             color: ghostwhite;
         }
         th, td {
-            border: 1px solid;
+            border: 1px solid #fff !important;
+
             padding: 14px 3px;
             border-collapse: collapse;
             text-align: center;
@@ -544,4 +544,7 @@ body {
 
 .bolder{
     font-weight: bolder;
+}
+.uppercase{
+    text-transform: uppercase!important;
 }
