@@ -29,7 +29,7 @@ The steps to set the swap memory is similar in all the linux Operating Systems. 
 <p>
 Computer random access memory (RAM) is one of the main component of the computer system. RAM stores and provides access to 
 the running application data. RAM is one of the fastest storage used in computer. RAM stores the information 
-that is actively used so that it can be accessed quickly. .The size of RAM one needs depends on the no of
+that is actively used so that it can be accessed quickly. The size of RAM one needs depends on the no of
 concurrent program running in the system and the size of the individual program the system needs to run. As the size of
 the program increases, more RAM is needed in the system along with high spec CPU. 
 </p>
@@ -167,7 +167,7 @@ you can use the following command to create the swap file:</p>
 </pre>
 </section>
 <section>
-<h3>Remove the swap file</h3>
+<h2>Delete the swap file</h2>
 <p>Sometime you mau want to remove the swap file. Run the following command to remove the swap</p>
     <h3>Deactivate the swap file</h3>
 <pre>
@@ -180,7 +180,7 @@ sudo swapoff -v /swapfile
 <p>Remove the swap file entry <span class="important">/swapfile swap swap defaults 0 0</span> from the 
 <span class="important"> /etc/fstab</span> file.</p>
 
-<h3>Delete the swap file</h3>
+<h3>Remove the swap file</h3>
 <p>For this, run the following command</p>
 <pre>
 
