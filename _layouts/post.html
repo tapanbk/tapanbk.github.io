@@ -57,13 +57,20 @@
           <section class="related-posts mt-2">
               <h3>Read related posts on <span class="important sentencecase">{{page.category}}</span> category</h3>
               <ul>
+                {% assign hasRelatedPost = false %}
                 {% for post in site.posts %}
-                {% if post.category == page.category %}
+                {% if post.category == page.category  and post.url != page.url%}
+                {% assign hasRelatedPost = true %}
                 <li>
                   {% include post-list.html%}
                 </li>
                 {% endif %}
                 {% endfor %}
+                {% if hasRelatedPost ==  false%}
+                <li>
+                  <span class="h3 important bold">No related posts</span>
+                </li>
+                {% endif %}
               </ul>
           </section>
         </div>
