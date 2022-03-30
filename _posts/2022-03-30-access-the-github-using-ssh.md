@@ -22,6 +22,7 @@ Ultimate Guide to access GitHub account using SSH
 This blog post is about how to access the GitHub account using the SSH. 
 The tutorial uses the ubuntu server and GitHub. However, steps are pretty much similar with other
 Operating systems and source code management tool
+</p>
 </section> 
 
 
