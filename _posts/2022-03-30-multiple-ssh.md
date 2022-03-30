@@ -4,7 +4,7 @@ section-type: post
 title:  Generate multiple SSH Keys for different GitHub accounts
 
 category: Git
-tags: ['git']
+tags: ['git', 'ssh', 'server']
 permalink: how-to-generate-multiple-ssh-for-different-github-accounts
 description: How to generate multiple SSH Keys for different GitHub accounts
 ---
@@ -14,8 +14,8 @@ Guide to generate multiple SSH Keys for different GitHub accounts
 <img
     src="{{site.baseurl}}/img/posts/github/use-multiple-ssh-keys-to-access-the-multiple-github-account.png"
     class="img-thumbnail img-rounded" height="400px" width="100%"
-    title="Ultimate guide to increase the swap memory of Linux"
-    alt="Ultimate guide to increase the swap memory of Linux">
+    title="Ultimate guide to generate multiple SSH Keys for different GitHub accounts"
+    alt="Ultimate guide to generate multiple SSH Keys for different GitHub accounts">
 
 <section>
 <p>

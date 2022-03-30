@@ -13,8 +13,8 @@ Guide to add unicode support in mysql and django
 <img
     src="{{site.baseurl}}/img/posts/django-mysql-unicode-support.png"
     class="img-thumbnail img-rounded" height="400px"
-    title="Ultimate guide to increase the swap memory of Linux"
-    alt="Ultimate guide to increase the swap memory of Linux">
+    title="Ultimate guide to  add unicode support in mysql and django"
+    alt="Ultimate guide to  add unicode support in mysql and django">
 
 <section>
 <p>
