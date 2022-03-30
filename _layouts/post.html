@@ -43,12 +43,29 @@
 
           {% if site.author_blurb %}
           <div class="author row">
-            <img class="col-xs-4 col-sm-3 col-md-2 img-circle img-thumbnail" src="{{site.baseurl}}{{site.author_blurb_image}}" alt="Me" />
+            <img class="col-xs-4 col-sm-3 col-md-2 img-circle img-thumbnail"
+                 src="{{site.baseurl}}{{site.author_blurb_image}}"
+                 alt="Tapan B.K. | Full Stack Software Engineer"
+                 title="Tapan B.K. | Full Stack Software Engineer"
+             />
             <p class="col-xs-8 col-sm-9 col-md-10">
               {{ site.author_blurb }}
             </p>
           </div>
-          {% endif%}
+          {% endif %}
+
+          <section class="related-posts mt-2">
+              <h3>Read related posts on <span class="important sentencecase">{{page.category}}</span> category</h3>
+              <ul>
+                {% for post in site.posts %}
+                {% if post.category == page.category %}
+                <li>
+                  {% include post-list.html%}
+                </li>
+                {% endif %}
+                {% endfor %}
+              </ul>
+          </section>
         </div>
       </div>
     </section>
