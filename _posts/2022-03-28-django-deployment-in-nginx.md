@@ -49,7 +49,7 @@ is similar in all the cloud services. However, following steps are based on AWS 
 
 <section>
 <h2>Install packages and their dependencies</h2>
-<pre>
+<pre class="terminal">
 
     sudo apt update && sudo apt upgrade -y
     sudo apt install python3-dev gcc libssl-dev virtualenv supervisor nginx gunicorn -y
@@ -62,7 +62,7 @@ is similar in all the cloud services. However, following steps are based on AWS 
 <p>Clone the project git. For the tutorial purpose, we have the project on the 
 
 <span class="important">/home/ubuntu/api </span> folder. </p>
-<pre>
+<pre class="terminal">
 
     git clone github_url
 
@@ -72,20 +72,20 @@ is similar in all the cloud services. However, following steps are based on AWS 
 <section>
 <h2>Setup Virtual environment</h2>
 <h4>Create virtual environment</h4>
-<pre>
+<pre class="terminal">
 
     virtualenv venv -p python3
 
 </pre>
 <p>-p python3 parameter is used to set the python3 interpreter.</p>
 <h4>Activate Virtual environment</h4>
-<pre>
+<pre class="terminal">
 
     source venv/bin/activate
 
 </pre>
 <h4>Install the project dependencies</h4>
-<pre>
+<pre class="terminal">
 
     pip3 install -r requirements.txt
 
@@ -97,7 +97,7 @@ is similar in all the cloud services. However, following steps are based on AWS 
     <h4>Copy the environment file</h4>
    <p>I have the environment file <span class="important">env.example.py </span>inside separate folder in
 <span class="important">config/settings</span>.</p>
-<pre>
+<pre class="terminal">
 
     sudo cp config/settings/env.example.py config/settings/env.py
     sudo nano config/settings/env.py
@@ -106,7 +106,7 @@ is similar in all the cloud services. However, following steps are based on AWS 
   
 
 <p>Most of the project have .env.example file in the root folder of the project. Copy and update the file</p>
-<pre>
+<pre class="terminal">
 
     sudo cp .env.example .env
     sudo nano .env
@@ -121,7 +121,7 @@ static folder is used to store the static files of the project. The folder for l
 can be configured in env file.
 </p>
 <h3>Following configuration can be added for static and media files</h3>
-<pre>
+<pre class="terminal">
 
     STATIC_URL = '/static/'
     STATIC_ROOT = os.path.join(BASE_DIR,'static')
@@ -130,7 +130,7 @@ can be configured in env file.
 
 </pre>
 <h3>To create the blank logs, static and media folder. Run following command</h3>
-<pre>
+<pre class="terminal">
 
     mkdir logs static media
 
@@ -139,7 +139,7 @@ can be configured in env file.
 
 <section>
 <h2>Update the static files</h2>
-<pre>
+<pre class="terminal">
 
     python manage.py collectstatic
 
@@ -151,13 +151,13 @@ can be configured in env file.
 <p>We need to create the various folder for the gunicorn and supervisor. For this tutorial purpose, we create these
 folders along side the project folder inside <span class="important">/home/ubuntu/</span>
 </p>
-<pre>
+<pre class="terminal">
 
     mkdir bin logs run
 
 </pre>
 <h5>Create a log file for gunicorn inside the logs folder</h5>
-<pre>
+<pre class="terminal">
 
     touch /home/ubuntu/logs/gunicorn-error.log
 
@@ -170,7 +170,7 @@ folders along side the project folder inside <span class="important">/home/ubunt
 <p>You can choose the mysql or the postgres database based on your choice</p>
 <h3>For Mysql Setup</h3>
 <h4>Mysql Installation and its dependencies</h4>
-<pre>
+<pre class="terminal">
     
     sudo apt install mysql-server libmysqlclient-dev default-libmysqlclient-dev -y
     sudo systemctl start mysql && sudo systemctl enable mysql
@@ -180,7 +180,7 @@ folders along side the project folder inside <span class="important">/home/ubunt
 
 <h4>Create user, database and grant permissions</h4>
 
-<pre>
+<pre class="terminal">
 
     sudo mysql
     CREATE USER 'project_user'@'localhost' IDENTIFIED BY 'password';
@@ -191,7 +191,7 @@ folders along side the project folder inside <span class="important">/home/ubunt
 
 <h3>For Postgres</h3>
 <h4>Postgres Installation and its dependencies</h4>
-<pre>
+<pre class="terminal">
     
     sudo apt-get install python3-pip python3-dev libpq-dev postgresql postgresql-contrib -y
     sudo systemctl enable supervisor  && sudo systemctl start supervisor
@@ -200,7 +200,7 @@ folders along side the project folder inside <span class="important">/home/ubunt
 
 <h4>Create user, database and grant permissions</h4>
 
-<pre>
+<pre class="terminal">
 
     sudo -u postgres createuser project_user;
     sudo -u postgres createdb myproject_db;
@@ -209,7 +209,7 @@ folders along side the project folder inside <span class="important">/home/ubunt
 
 <h3> Update user password and grant permissions to user</h3>
 
-<pre>
+<pre class="terminal">
 
     sudo -u postgres psql;
     alter user 'project_user' with encrypted password 'password';
@@ -219,7 +219,7 @@ folders along side the project folder inside <span class="important">/home/ubunt
 
 
 <h3>Basic Postgres commands</h3>
-<pre>
+<pre class="terminal">
 
     sudo service postgresql stop
     sudo service postgresql start
@@ -230,7 +230,7 @@ folders along side the project folder inside <span class="important">/home/ubunt
 
 <section>
 <h2>Create the migration files and install the migrations</h2>
-<pre>
+<pre class="terminal">
 
     source venv/bin/activate
     python manage.py makemigrations
@@ -243,7 +243,7 @@ folders along side the project folder inside <span class="important">/home/ubunt
 <h2>Gunicorn setup</h2>
 <p>Create a gunicorn_start file inside the  <span class="important">/home/ubuntu/bin</span></p>
 <h3>Create a gunicorn_start file</h3>
-<pre>
+<pre class="terminal">
 
     sudo nano bin/gunicorn_start
 
@@ -252,7 +252,7 @@ folders along side the project folder inside <span class="important">/home/ubunt
 <h3>Update the file content with following content</h3>
 Update the NAME, DIR, USER, GROUP and workers values based on the project setting
 <br/><br/>
-<pre>
+<pre class="terminal">
 
     #!/bin/bash
     NAME="project_name"
@@ -291,7 +291,7 @@ like <span class="important">\home\USER_NAME\YOUR_PROJECT_NAME</span>
 </section>
 
 <h3>Add the executable permission to the gunicorn_start file</h3>
-<pre>
+<pre class="terminal">
     
     sudo chmod u+x bin/gunicorn_start
 
@@ -306,20 +306,20 @@ like <span class="important">\home\USER_NAME\YOUR_PROJECT_NAME</span>
 <p>Create new file inside <span class="important">/etc/supervisor/conf.d</span> . For the sake of tutorials purpose,
 we are using the myproject.conf
 </p>
-<pre>
+<pre class="terminal">
 
     sudo nano /etc/supervisor/conf.d/myproject.conf
 
 </pre>
 
 <h3>Open the configuration file using following command</h3>
-<pre>
+<pre class="terminal">
 
     sudo nano /etc/supervisor/conf.d/myproject.conf
 
 </pre>
 <h3>Update the basic supervisor configuration in myproject.conf file</h3>
-<pre>
+<pre class="terminal">
     
     [program:myproject]
     command=sh /home/ubuntu/bin/gunicorn_start
@@ -338,7 +338,7 @@ to the user</p>
 <h2>Check the gunicorn and supervisor configuration</h2>
 <p>Following command helps to reread and update the currently updated supervisor commands</p>
 
-<pre>
+<pre class="terminal">
 
     sudo supervisorctl reread
     sudo supervisorctl update
@@ -346,7 +346,7 @@ to the user</p>
 </pre>
 
 <h3>Check the status of the configuration</h3>
-<pre>
+<pre class="terminal">
 
     sudo supervisorctl status myproject
 
@@ -358,13 +358,13 @@ to the user</p>
 <h2>Create a nginx configuration</h2>
 
 <h3>Create a configuration file and update the following configuration</h3>
-<pre>
+<pre class="terminal">
 
     sudo nano /etc/nginx/sites-available/myproject.conf
 
 </pre>
 
-<pre>
+<pre class="terminal">
      
     upstream app_server {
         server unix:/home/ubuntu/run/gunicorn.sock fail_timeout=0;
@@ -410,7 +410,7 @@ to the user</p>
 </pre>
 
 <h3>Check the validity of nginx configuration</h3>
-<pre>
+<pre class="terminal">
 
     sudo nginx -t
 
@@ -418,7 +418,7 @@ to the user</p>
 
 <h3>Create  symbolic link to <span class="important"> /etc/nginx/sites-enabled </span></h3>
 
-<pre>
+<pre class="terminal">
 
     sudo ln -s /etc/nginx/sites-available/myproject.conf /etc/nginx/sites-enabled/
 
@@ -426,7 +426,7 @@ to the user</p>
 
 <h3>Remove the default configuration file</h3>
 
-<pre>
+<pre class="terminal">
 
     sudo rm /etc/nginx/sites-enabled/default
 
@@ -434,7 +434,7 @@ to the user</p>
 
 <h3>Restart the nginx server and supervisor</h3>
 
-<pre>
+<pre class="terminal">
 
     sudo systemctl restart nginx
     sudo systemctl restart supervisor
@@ -446,7 +446,7 @@ to the user</p>
 <section>
 <h2>Some useful commands</h2>
 <p>Check the nginx error</p>
-<pre>
+<pre class="terminal">
 
     sudo nginx -c /etc/nginx/nginx.conf -t
     sudo nginx -t
@@ -454,7 +454,7 @@ to the user</p>
 </pre>
 
 <p>Reload and Restart supervision</p>
-<pre>
+<pre class="terminal">
 
     sudo supervisorctl reload
     sudo supervisorctl restart myproject
@@ -462,7 +462,7 @@ to the user</p>
 </pre>
 
 <p>Some useful Supervisor commands</p>
-<pre>
+<pre class="terminal">
 
     sudo nano gunicorn_start 
     sudo supervisorctl reread

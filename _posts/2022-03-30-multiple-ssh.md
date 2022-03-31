@@ -54,7 +54,7 @@ We will use <span class="important">your_personal_email@youremail.com</span> as 
 We suggest creating the ssh keys inside the .ssh folder. If folder is not available, create using the following command
 </p>
 
-<pre>
+<pre class="terminal">
 
     mkdir .ssh
     cd .ssh
@@ -63,7 +63,7 @@ We suggest creating the ssh keys inside the .ssh folder. If folder is not availa
 
 <p>Use the following command in terminal to generate the SSH key for personal email</p>
 
-<pre>
+<pre class="terminal">
     
     ssh-keygen -t rsa -C "your_personal_email@youremail.com"    
 
@@ -89,7 +89,7 @@ For the tutorial purpose, we will go with the <span class="important">id_rsa_per
 <h2>Generate SSH keys for office GitHub account</h2>
 <p>Use the following command to generate the SSH key for the email</p>
 
-<pre>
+<pre class="terminal">
     
     ssh-keygen -t rsa -C "your_office_email@youremail.com"    
 
@@ -117,7 +117,7 @@ For the tutorial purpose, we will go with the <span class="important">id_rsa_off
 <p>First you need to grab the details on the public file</p>
 
 <h3>Grabbing the Details of the <span class="important">id_rsa_personal.pub</span> key</h3>
-<pre>
+<pre class="terminal">
     
     cat id_rsa_personal.pub    
 

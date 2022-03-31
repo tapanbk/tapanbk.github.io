@@ -99,7 +99,7 @@ other program that need to be processed urgently.
 <h2>Create and Update the permissions of swap file</h2>
 <h3>Create a swap file</h3>
 <p>Create a swap file that can be used as swap. Run the following command</p>
-<pre>
+<pre class="terminal">
     
     sudo fallocate -l 4G /swapfile
 
@@ -109,7 +109,7 @@ other program that need to be processed urgently.
 <p>If fallocate is not installed or if you get an error message saying fallocate failed: Operation not supported then
 you can use the following command to create the swap file:</p>
 
-<pre>
+<pre class="terminal">
 
      sudo dd if=/dev/zero of=/swapfile bs=4096 count=1048576    
 
@@ -122,14 +122,14 @@ you can use the following command to create the swap file:</p>
 <h3>Set the correct permissions</h3>
 <p>Only the root user is able to write to the swap file. so, update the permissions</p>
 
-<pre>
+<pre class="terminal">
 
     sudo chmod 600 /swapfile
 
 </pre>
 
 <p> Use the mkswap utility to set up the file as Linux swap area:</p>
-<pre>
+<pre class="terminal">
     
     sudo mkswap /swapfile
 
@@ -142,7 +142,7 @@ you can use the following command to create the swap file:</p>
 <p>Enter the following command enables the swap file</p>
 </section>
 
-<pre>
+<pre class="terminal">
     
     sudo swapon /swapfile
 
@@ -150,7 +150,7 @@ you can use the following command to create the swap file:</p>
 <section>
 <h3>Make the swap file permanent</h3>
 <p>To make the swap file permanent, open the /etc/fstab file and append the following line:</p>
-<pre>
+<pre class="terminal">
     sudo nano /etc/fstab
     /swapfile swap swap defaults 0 0
 
@@ -160,7 +160,7 @@ you can use the following command to create the swap file:</p>
 <section>
 <h3>Verify the Swap process</h3>
 <p>To verify the swap file is active, use either the swapon or the free command as shown below:</p>
-<pre>
+<pre class="terminal">
 
     sudo swapon --show
 
@@ -170,7 +170,7 @@ you can use the following command to create the swap file:</p>
 <h2>Delete the swap file</h2>
 <p>Sometime you mau want to remove the swap file. Run the following command to remove the swap</p>
     <h3>Deactivate the swap file</h3>
-<pre>
+<pre class="terminal">
 
 sudo swapoff -v /swapfile
 
@@ -182,7 +182,7 @@ sudo swapoff -v /swapfile
 
 <h3>Remove the swap file</h3>
 <p>For this, run the following command</p>
-<pre>
+<pre class="terminal">
 
     sudo rm /swapfile
 
