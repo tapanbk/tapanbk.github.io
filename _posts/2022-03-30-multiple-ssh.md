@@ -55,18 +55,14 @@ We suggest creating the ssh keys inside the .ssh folder. If folder is not availa
 </p>
 
 <pre class="terminal">
-
     mkdir .ssh
     cd .ssh
-
 </pre>
 
 <p>Use the following command in terminal to generate the SSH key for personal email</p>
 
 <pre class="terminal">
-    
-    ssh-keygen -t rsa -C "your_personal_email@youremail.com"    
-
+    ssh-keygen -t rsa -C "your_personal_email@youremail.com"
 </pre>
 <br>
 <img
@@ -90,9 +86,7 @@ For the tutorial purpose, we will go with the <span class="important">id_rsa_per
 <p>Use the following command to generate the SSH key for the email</p>
 
 <pre class="terminal">
-    
-    ssh-keygen -t rsa -C "your_office_email@youremail.com"    
-
+    ssh-keygen -t rsa -C "your_office_email@youremail.com"
 </pre>
 <br>
 <img
@@ -118,9 +112,7 @@ For the tutorial purpose, we will go with the <span class="important">id_rsa_off
 
 <h3>Grabbing the Details of the <span class="important">id_rsa_personal.pub</span> key</h3>
 <pre class="terminal">
-    
-    cat id_rsa_personal.pub    
-
+    cat id_rsa_personal.pub
 </pre>
 
 <h3>Updating the key in the Github</h3>

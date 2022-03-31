@@ -30,9 +30,7 @@ This blog post is about how to add unicode support in Django in MySQL database.
     following command in MySQL commandline
 </p>
 <pre class="terminal">
-
     create database my_db_name character set utf8mb4;
-
 </pre>
 </section>
 <section>
@@ -45,7 +43,6 @@ the settings.py file
 </p>
 
 <pre class="terminal">
-
     DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -55,7 +52,6 @@ the settings.py file
                     'use_unicode': True, },
         },
     }
-    
 </pre>
 </section>
 
@@ -64,15 +60,12 @@ the settings.py file
 <p>Open the <span class="important">my.cnf</span> file located in  <span class="important">/etc/mysql/</span> folder</p>
 
 <pre class="terminal">
-    
     sudo nano /etc/mysql/my.cnf
-    
 </pre>
 
 <p>Update the configuration details as below:</p>
 
 <pre class="terminal">
-
     [client]
     default-character-set = utf8mb4
     
@@ -83,7 +76,6 @@ the settings.py file
     character-set-client-handshake = FALSE
     character-set-server = utf8mb4
     collation-server = utf8mb4_unicode_ci
-
 </pre>
 </section>
 <section>
@@ -96,16 +88,12 @@ setting by running the following code in mysql command line tool.
 
 
 <pre class="terminal">
-
-    mysql -u mysql_user -p 
-
+    mysql -u mysql_user -p
 </pre>
 
 <p>Enter password and hit enter. After successful login, run the following command</p>
 <pre class="terminal">
-
     ALTER DATABASE my_db_name CHARACTER SET = utf8mb4 COLLATE utf8mb4_unicode_ci;
-
 </pre>
 </section>
 <section></section>

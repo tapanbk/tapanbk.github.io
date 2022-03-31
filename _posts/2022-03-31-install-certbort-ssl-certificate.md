@@ -86,20 +86,16 @@ Let's encrypt use this token to validate the DNS record of domain.
 <p>Use the following command to download the Let's Encrypt Client software</p>
 <p>For the Ubuntu version less or equals to 18.05</p>
 <pre class="terminal">
-    
     apt-get update
     sudo apt-get install certbot
-    sudo apt-get install python-certbot-nginx    
-
+    sudo apt-get install python-certbot-nginx
 </pre>
 
 <p>For the Ubuntu version later than 18.05. use the python3 version of certbot.</p>
 <pre class="terminal">
-
     apt-get update
     sudo apt-get install certbot
-    sudo apt-get install python3-certbot-nginx    
-
+    sudo apt-get install python3-certbot-nginx
 </pre>
 </section>
 
@@ -115,9 +111,7 @@ For this, it looks for the server name directive for the domain the certificate 
 <span class="important">/etc/nginx/sites-available/</span> folder </h3>
 
 <pre class="terminal">
-
     sudo nano /etc/nginx/sites-available/examplesite.conf
-    
 </pre>
 
 
@@ -130,7 +124,6 @@ Use the domain name instead.
 
 
 <pre class="terminal">
-
      server {
         listen 80 default_server;
         listen [::]:80 default_server;
@@ -139,7 +132,6 @@ Use the domain name instead.
     
         root /var/www/htdocs/examplesite;
       }
-
 </pre>
 
 <p>This is how basic nginx block looks like. The NGINX configuration may differ based on the type of application and
@@ -151,17 +143,13 @@ the programming language used to code the application.
 <p>Run the following command to create the symbolic link </p>
 
 <pre class="terminal">
-
     sudo ln -s /etc/nginx/sites-available/examplesite.conf /etc/nginx/sites-enabled/
-
 </pre>
 
 <h3>Restart NGINX</h3>
 <p>Save the nginx configuration and restart the NGINX server.</p>
 <pre class="terminal">
-
     nginx -t && nginx -s reload
-
 </pre>
 </section>
 
@@ -169,9 +157,7 @@ the programming language used to code the application.
 <h2>Obtain the SSL/TLS Certificate</h2>
 <p>Run the following command to generate certificates </p>
 <pre class="terminal">
-
     sudo certbot --nginx -d examplesite.com -d www.examplesite.com
-
 </pre>
 
 <p>
@@ -187,7 +173,6 @@ Certbot will show the success message about the certificate generation and locat
 
 
 <pre class="terminal">
-
     Congratulations! You have successfully enabled https://examplesite.com and https://www.examplesite.com 
     
     -------------------------------------------------------------------------------------
@@ -198,7 +183,6 @@ Certbot will show the success message about the certificate generation and locat
     Your key file has been saved at:
     /etc/letsencrypt/live/examplesite.com/privatekey.pem
     Your cert will expire on 2022-12-10.
-
 </pre>
 
 <p>Note: Note: Let’s Encrypt certificates expire after 90 days on 2022-12-10.
@@ -208,7 +192,6 @@ We need to automatically renew the certificate which could be done using the cro
 
 
 <pre class="terminal">
-    
     server {
         listen 80 default_server;
         listen [::]:80 default_server;
@@ -228,7 +211,6 @@ We need to automatically renew the certificate which could be done using the cro
             return 301 https://$host$request_uri;
         } # managed by Certbot
     }
-
 </pre>
 
 </section>
@@ -241,15 +223,11 @@ We need to automatically renew the certificate which could be done using the cro
 
 <h3>Open terminal to open the crontab</h3>
 <pre class="terminal">
-    
-    crontab -e    
-
+    crontab -e
 </pre>
 <p>Add the following configuration</p>
 <pre class="terminal">
-
     0 12 * * * /usr/bin/certbot renew --quiet
-
 </pre>
 <p>This commands will run at midnight each day. It will check if the certificate is valid for next 30 days. If not,
 it will renew the certificate. --quiet flag tells certbot to not generate any output.

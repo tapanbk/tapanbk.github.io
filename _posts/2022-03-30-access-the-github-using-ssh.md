@@ -53,10 +53,8 @@ post to create generate multiple ssh for multiple GitHub accounts
 <h2>Start SSH Agent using  following command</h2>
 
 <pre class="terminal">
-
     eval `ssh-agent -s`
     ssh-add
-
 </pre>
 </section>
 <section>
@@ -64,19 +62,15 @@ post to create generate multiple ssh for multiple GitHub accounts
 <h3>Removes all ssh entries from the ssh-agent</h3>
 
 <pre class="terminal">
-
     ssh-add -D
-
 </pre>
 </section>
 <section>
 <h2>Adds the relevant ssh keys</h2>
 
 <pre class="terminal">
-
     ssh-add ~/.ssh/id_rsa_personal
     ssh-add ~/.ssh/id_rsa_office
-
 </pre>
 </section>
 <section>
@@ -85,7 +79,6 @@ post to create generate multiple ssh for multiple GitHub accounts
 available, create a new file. 
 </p>
 <pre class="terminal">
-
     Host github.com-office
         HostName github.com
         User git
@@ -95,7 +88,6 @@ available, create a new file.
         HostName github.com
         User git
         IdentityFile ~/.ssh/id_rsa_office
-
 </pre>
 </section>
 <section>
@@ -115,9 +107,7 @@ available, create a new file.
 <p>You will have the SSH repo url in following format for GitHub repo</p>
 
 <pre class="terminal">
-
     git@github.com:username/awesome-project.git
-
 </pre>
 
 <h3>Update the repo url</h3>
@@ -129,17 +119,13 @@ available, create a new file.
 
 <p>Final repo url for personal Repo will be like: </p>
 <pre class="terminal">
-
     git@github.com-personal:username/awesome-personal-project.git
-
 </pre>
 
 
 <p>Final repo url for Office Repo</p>
 <pre class="terminal">
-
     git@github.com-office:username/awesome-office-project.git
-
 </pre>
 </section>
 <section>
@@ -147,17 +133,13 @@ available, create a new file.
 <p>Clone the personal repo using the following command in the terminal</p>
 
 <pre class="terminal">
-
     git clone  git@github.com-personal:username/awesome-personal-project.git
-
 </pre>
 
 <p>Clone the office repo using the following command in the terminal</p>
 
 <pre class="terminal">
-
     git clone  git@github.com-office:username/awesome-office-project.git
-
 </pre>
 </section>
 
@@ -166,17 +148,13 @@ available, create a new file.
 <p>For the existing project, you can change the remote url using the following command</p>
 <p>For the personal repo </p>
 <pre class="terminal">
-
     git remote set-url origin git@github.com-personal:username/awesome-personal-project.git
-
 </pre>
 
 
 <p>For the office repo </p>
 <pre class="terminal">
-
     git remote set-url origin git@github.com-office:username/awesome-office-project.git
-
 </pre>
 
 <p>
