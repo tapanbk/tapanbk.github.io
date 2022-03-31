@@ -29,26 +29,15 @@ The tutorial is tested on Ubuntu server 21.04.
 <section>
 <h2>What is SSL Certificate?</h2>
 <p>
-An SSL certificate stands for Secure Sockets Layer which is a digital certificate that validating server identity and encrypting internet traffic.
+An SSL certificate stands for Secure Sockets Layer which is a digital certificate that validates server identity and encrypt internet traffic.
 Due to SSL certificate, it is possible to make the secure connection between server and client and securely
-transfer data. Any website that uses SSL/TLS uses the SSL certificate.
+transfer data. Any website that uses HTTPS uses the SSL certificate.
 </p>
 </section>
 
-What information does an SSL certificate contain?
-SSL certificates include:
-
-The domain name that the certificate was issued for
-Which person, organization, or device it was issued to
-Which certificate authority issued it
-The certificate authority's digital signature
-Associated subdomains
-Issue date of the certificate
-Expiration date of the certificate
-The public key (the private key is kept secret)
-
 <section>
 <h2>What information is provided by SSL certificate?</h2>
+<p>SSL certificates include:</p>
 
 <ol>
     <li>The name of the domain that the certificate was issued for</li>
