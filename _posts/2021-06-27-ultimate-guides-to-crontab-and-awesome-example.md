@@ -10,31 +10,41 @@ description: Ultimate guide to crontab and their examples
 
 Read about ultimate guides to crontab with some awesome example
 <!--more-->
+<section>
 <img src="{{site.baseurl}}/img/posts/cron-jobs.jpg" class="img-thumbnail img-rounded" height="400px" alt="database-dump">
 ## Cron  jobs
-<span class="important">Cron</span> also known as cron jobs is a built-in software utility that is used to schedule a time-based job in Unix-like
-computer operating systems. Users setup and maintain software environments to use cron to schedule jobs which could be
+<span class="important">Cron</span> also known as cron jobs is a built-in software utility that is used to schedule a
+time-based job in Unix-like computer operating systems.
+Users setup and maintain software environments to use cron to schedule jobs which could be
 either commands or shell scripts to run periodic tasks at fixed time, date or interval. It automates system
 administration, system maintenance tasks or repetitive like sending the register email, taking database backup, sending
 notifications.
+</section>
 
+<section>
 ## Crontab:
 
 Crontab or cron table file handles actions of cron. The crontab is a configuration file which specifies shell commands
 to run periodic tasks at a given schedule. Each user can have their own individual crontab files. There is also a
 system-wide crontab file usually located in <span class="important">/etc</span>.
+</section>
 
+<section>
 ### Prerequisites for cron jobs
 1. A linux system
 2. command line/terminal
 3. A user account with root or sudo privileges
+</section>
 
+<section>
 ### Edit or Update cron jobs
 You can edit crontab by running following commands for current user
 <pre class="terminal">
     crontab -e
 </pre>
+</section>
 
+<section>
 For sudo users
 
 <pre class="terminal">
@@ -47,18 +57,23 @@ You can use -u <username> to specify which users crontab to edit
 <pre class="terminal">
     sudo crontab -u username -e
 </pre>      
-    
+
 
 All users have their own crontab. You can edit the root's crontab by using sudo
+</section>
 
+
+<section>
 ### list the crontab jobs:
 <pre class="terminal">
     crontab -l
     sudo crontab -l # for sudo users
     sudo crontab -u username -l     # for username
-</pre>      
+</pre>     
+</section>
+ 
 
-
+<section>
 ### Basic Crontab Syntax
 
 Each line in crontab expects a cron expression mad of five fields which represent the time to execute the command,
@@ -75,6 +90,9 @@ So, the parts of a cron command are:
 2. In the second section, the <span class="important">/directory/command <span> specifies the location and script you want to run.
 3. The final segment <span class="important">output</span> is optional. It defines how the system notifies the user of the job completion
 
+</section>
+
+<section>
 ### Cron Job Time Format
 
 | Field      | Possible Values     | Syntax    |  Description    |
@@ -85,16 +103,18 @@ So, the parts of a cron command are:
 | [d] – Month | 0 = none, 1 = January 12 = December    | 0 0 0 2 *	 |  The numerical month is 2 which determines that the job runs only in February. |
 | [e] – Day of the Week | 0 = Sunday and 7 = Sunday     | 0 0 0 * 2    | 2 in the current position means that the job would only run on Tuesday. |
 
+</section>
 
+<section>
 ## Examples:
 
 #### RUN EVERY MINUTE
 
-The <span class="important">* * * * *</span> symbol means to run on every occurrence. It means 
-* on every minute 
-* of every hour 
-* on each day of the month 
-* for each month 
+The <span class="important">* * * * *</span> symbol means to run on every occurrence. It means
+* on every minute
+* of every hour
+* on each day of the month
+* for each month
 * every day of the week
 
 #### RUN EVERY  15 seconds
@@ -293,9 +313,11 @@ or
 ### DISCARD OUTPUT
 <pre class="terminal">
     * * * * *     /path/to/executable/script.sh > /dev/null 2>&1
-</pre>   
+</pre> 
+</section>
+  
 
-
+<section>
 ### View cron logs
 
 The location of log file differ by linux distribution. The log file is mostly found at:
@@ -317,28 +339,38 @@ The location of log file differ by linux distribution. The log file is mostly fo
 
 Cron Schedules edited with <span class="important">crontab -e</span> are stored in <span class="important">/var/spool/cron</span> and they should
 never be modified directly
+</section>
 
+<section>
 ### Backup cron to text file:
 <pre class="terminal">
     crontab -l > cron-backup.txt
-</pre>   
+</pre> 
+</section>
+  
 
-
+<section>
 ### Removing current scheduled cron:
 <pre class="terminal">
     crontab -r
 </pre>   
+</section>
 
 
-#### Restore crons from text file:
+<section>
+#### Restore cron from text file:
 <pre class="terminal">
     crontab cron-backup.txt
 </pre>   
+</section>
 
 
+<section>
 ### Tips
-* Always use full path of files and executables 
+* Always useful path of files and executables 
 * Scripts must be executable. You can make script executable by running (<span class="important">sudo chmod +x filename</span>)
 * If several steps are needed, put all the steps in the script files and call the script file. 
 *  Use quotation marks for anything with spaces.
 * Use the lowest privilege user possible. Do not run jobs as root unless absolutely needed.
+</section>
+
