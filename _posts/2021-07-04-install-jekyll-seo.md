@@ -31,42 +31,55 @@ pages uses jekyll engine behind the scenes.
 When the changes are pushed to the github main branch, github pages automatically generate the static site. 
 
 #### Install the jekyll site and run the site
-    
+
+<pre class="terminal">
     gem install bundler jekyll
     jekyll new my-awesome-site
     cd my-awesome-site
     bundle exec jekyll serve
+</pre>  
+
 
 Now you can browse the site in the browser by visiting:
 
+<pre class="terminal">
     http://localhost:4000
+</pre>  
+
 
 
 ### install jekyll seo tag
 
 1.Add the following code to Gemfile by:
 
+<pre class="terminal">
 {% raw %}
-
     gem 'jekyll-seo-tag'
 {% endraw %}
+</pre>  
 
 2.Add the following to _config.yml file:
-{% raw %}
 
+<pre class="terminal">
+{% raw %}
     plugins: [jekyll-seo-tag]
 {% endraw %}
+</pre>
 
 or
-{% raw %}
 
+<pre class="terminal">
+{% raw %}
     plugins:
         - jekyll-seo-tag
 {% endraw %}
+</pre>  
+
  
 3.Use the following code right before <span class="important"> </head> </span> in site's template
 
+<pre class="terminal">
 {% raw %}
-
     {% seo %}
 {% endraw %}
+</pre>

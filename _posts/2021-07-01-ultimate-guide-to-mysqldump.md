@@ -25,7 +25,11 @@ database details.
 A software bug or hard-drive failure could be disastrous. So, it is always a good idea to take backup of the database.
 
 #### Syntax of the mysqldump utility:
+
+<pre class="terminal">
     mysqldump -u [user_name] –p [user_password] [options] [database_name] [table_name] > [dump_file_name.sql]
+</pre>  
+
 
 #### Parameters Explained:
 * -u [user_name]: Username to connect to the mysql server
@@ -44,54 +48,72 @@ dump will be created.
 If you are logged in same user that you want to perform the database dump, you can omit <span style="color: #00fae0">
 -u</span> and <span style="color: #00fae0">-p</span> options.
 
+<pre class="terminal">
     mysqldump  [options] [database_name] [table_name] > [dump_file_name.sql]
+</pre>  
 
 To generate only database structure without any data, <span style="color: #00fae0">--no-data</span> option is used.
-    
-        mysqldump -u database-user -p --no-data database_name > database_structure.sql
+
+<pre class="terminal">
+    mysqldump -u database-user -p --no-data database_name > database_structure.sql
+</pre>     
 
 This is the most common way to create the database backup. We can create the multiple database at once.
 
 ### Backup multiple MySQL database
 
 We need to use <span style="color: #00fae0">--database</span> followed by the list of databases name separated by space.
-    
+
+<pre class="terminal">
     mysqldump -u root -p --databases database_name_1 database_name_1 > databases_dump_1_2.sql
+</pre>      
 
 This command will create the database dump containing all the database mentioned.
 
 ### Backup all MySQL database
 Use <span style="color: #00fae0">--all-databases</span> option to back up all the MySQL databases.
 
+<pre class="terminal">
     mysqldump -u root -p --all-databases > all_databases.sql
+</pre>  
 
 ### Backup all MySQL databases to separate files
 
 Mysqldump utility doesn't provide an inbuilt option to back up all databases to separate files at once. we can easily
 achieve that with a for loop and bash
 
-    for DB in $(mysql -e 'show databases' -s --skip-column-names); do
+<pre class="terminal">
+   for DB in $(mysql -e 'show databases' -s --skip-column-names); do
         mysqldump $DB > "$DB.sql";
     done
+</pre>  
+ 
 
 ### Download database dump as compressed file
 
 It is good idea to compress file the output file if the size of the file is very large. 
 
+<pre class="terminal">
     mysqldump database_name | gzip > dump.sql.gz
+</pre>  
+
 
 ### Restoring the MySQL database dump
 The database dump can be restored using the mysql database dump.
 The command to restore the database dump:
-    
+
+<pre class="terminal">
     mysql  database_name < database_dump.sql
+</pre>  
 
 
 ### Restore all database at once
 The database back up with <span style="color: #00fae0">-all-databases</span> option can be restored at once.
 We can store the all database using <span style="color: #00fae0">--one-database</span> option
 
+<pre class="terminal">
     mysql --one-database database_name < all_databases_dump.sql
+</pre>  
 
 
 ### Where clause with MySQLDump
@@ -99,4 +121,6 @@ If we want to dump the records from table that with specific condition, we can s
 For example, if we want to dump the database from users table from customers table where created_at is greater than
 '2021-01-02',
 
+<pre class="terminal">
     mysqldump -u root -p customers --tables users --where="created_at > '2021-01-02' " > database_dump.sql
+</pre>  

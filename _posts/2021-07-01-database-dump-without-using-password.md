@@ -38,62 +38,85 @@ You can disable the mysqldump password prompting using the following configurati
 The configuration is based on Ubuntu OS.
 
 1.Create a new file <span class="important">.my.conf</span> at home directory of the user
-    
-    sudo nano ~/.my.cnf   
+
+<pre class="terminal">
+    sudo nano ~/.my.cnf  
+</pre>  
+ 
 This commands takes user to the home directory, creates <span class="important">.my.cnf</span> file and opens using the nano. You can use the text editor
 or IDE of you choice
 
 2.Enter the database user and password details in the <span class="important">.my.cnf</span> file
-  
+
+<pre class="terminal">
     [mysqldump]
     user=mysqluser
-    password=mysql_user_password    
+    password=mysql_user_password   
+</pre>    
+ 
 
 This configuration allows user to connect to the mysql without entering any password. Due to this configuration,
 you don't need to use <span class="important">-p</span> or <span class="important">--password</span> in mysql and mysqldump command. 
 
 The commands to take database backup without any password is:
 
+<pre class="terminal">
     mysqldump –u mysqluser my_database > my_database_dump.sql
+</pre>  
 
 The default locations of conf files that mysql looks at in linux are:
-    
+
+<pre class="terminal">
     ~/.my.cnf
     /etc/my.cnf
     /etc/mysql/my.cnf
     $MYSQL_HOME/my.cnf
     [datadir]/my.cnf
+</pre>      
+
 
 The default locations of conf files that mysql looks at in windows are:
-    
+
+<pre class="terminal">
     C:\Windows\my.ini
     C:\Windows\my.cnf
     C:\my.ini
     C:\my.cnf
     C:\Program Files\MySQL\MySQL Server 5.5\my.ini
     C:\Program Files\MySQL\MySQL Server 5.5\my.cnf
+</pre>     
+
 
 It is possible that there is no .my.cnf file in the default locations. You need to create the file in one of the location.
 
 You can find the location of .my.cnf in linux using following commands
-    
+
+<pre class="terminal">
     locate my.cnf
     whereis my.cnf
     find . -name my.c
+</pre>      
 
 
 If you .my.cnf file is not at above mentioned default locations, you  can specify the default file location using
 <span class="important">--default-file</span> option
 
+<pre class="terminal">
     mysqldump --defaults-file=/path-to-my-cnf-file/.my.cnf –u mysql_user my_database > my_database_dump.sql
+</pre>  
 
 To connect to the mysql without entering password, you can add following lines in the .my.cnf file
 
+<pre class="terminal">
     [mysql]
     user=mysql_user
     password=mysql_user_password
+</pre>  
+
 
 #### Note:
 Change the <span class="important">.my.cnf</span> file permissions
-    
+
+<pre class="terminal">
     sudo chmod 600 ~/.my.cnf 
+</pre>      

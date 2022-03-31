@@ -26,12 +26,14 @@ class="img-thumbnail img-rounded" height="400px" alt="What is my ip address">
 </div>
 
 <h3>  JavaScript Code to get  your public IP address </h3>
-    
+
+<pre class="terminal">
     // Get the current public IP address details
     const url = 'https://ipinfo.io/json?token="your-token"';
     $.getJSON(url, function(data) {
         const location_data = JSON.stringify(data, null, 2);
     });
+</pre>
 
 <style>
     .jumbotron{

@@ -11,7 +11,9 @@ Tools to Get distance between two location based on latitude and longitude
 <!--more-->
 
 <img src="{{site.baseurl}}/img/posts/distance-between-two-lat-lng.jpg"
-class="img-thumbnail img-rounded" height="400px" alt="Distance between two locations based on latitude and longitude">
+class="img-thumbnail img-rounded" height="400px"
+width="100%"
+alt="Distance between two locations based on latitude and longitude">
 
 <p>Wondering how to get the distance between the two location? This tools helps to get the distance between the location
 based on their latitude and longitude. This tools helps to get the distance in straight line.
@@ -46,7 +48,6 @@ based on their latitude and longitude. This tools helps to get the distance in s
             </div>
         </div>
     </div>
-    
     <div class="row">
         <div class="col-md-12">
             <div class="form-group">
@@ -82,7 +83,8 @@ based on their latitude and longitude. This tools helps to get the distance in s
 </p>
 
 <h3>  JavaScript formula to get the distance between two locations based on their latitude and longitude </h3>
-    
+ 
+<pre class="terminal">
     // Check if the lat lng is valid
     function isValidLatLng(latLngAddress){
         if(latLngAddress.length!==2){
@@ -123,7 +125,7 @@ based on their latitude and longitude. This tools helps to get the distance in s
             'miles': parseFloat(dist * 0.868).toFixed(2)
         }
     }
-
+</pre>
 <style>
     .jumbotron{
         background-color: #1d3752;

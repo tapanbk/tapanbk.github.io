@@ -21,7 +21,7 @@ features to sign in using the facebook, Twitter, google and even disqus and has 
 features. Disqus can be integrated in the system by inserting code snippets or installing any one of the plugins from
 [install disqus plugin page](https://disqus.com/admin/install/){:target="_blank"}
 
-Note: You need to signup to disqus to visit the installation page. Disqus can be installed on wordpress, Blogger,
+Note: You need to sign up to disqus to visit the installation page. Disqus can be installed on WordPress, Blogger,
 Tumblr, TypePad, Drupal, Joomla, shopify and many more. Of course, it could be installed on the Jekyll. If the website,
 web app or blog type is not mentioned in the list, you can install the disqus with the universal code .
 
@@ -42,10 +42,17 @@ manually with the universal code. As we are installing on the jekyll. choose jek
 
 vi. You need to add <span class="important">comments: true </span> on _config.yml file
 
-vii. Copy and paste the universal code In between a {% if page.comments %} and a {% endif %} tag at the place where you
-want to show the comment.
+vii. Copy and paste the universal code In between a 
+<pre class="terminal">
+{% raw %}
+   {% if page.comments %}
+   {% endif %} 
+{% endraw %}
+</pre>  
 
-Based on this setting, you can disable the comment by updating comments: false in _config.yml file.
+tag at the place where you want to show the comment.
+
+Based on this setting, you can disable the comment by updating comments: false in <span class="important"> _config.yml</span>  file.
 
 You can configure disqus setting from the config Disqus tab. You can update website url, comment policy URL, comment
 policy description, website category, language, color schema and type face under appearance.
@@ -65,7 +72,7 @@ Some pros of the using Disqus in website are:
 * Disqus have dedicated control panel to approve the comments.
 * It has IP blocking and user blocking system to prevent spams  
 * Disqus allows user to login using social medias like facebook, Twitter, gmail and even disqus itself.
-* Disqus allows user to like the comments that lets readers to like the comments.
+* Disqus allows user to like the comments that let readers like the comments.
 * It's very easy to install
 * It is mobile responsive and mobile friendly.
 
