@@ -17,7 +17,10 @@
 
           <div>
             {% for post in site.posts %}
-              {% if post.category == category %}
+            {% assign page_category = category | downcase %}
+            {% assign post_category = post.category | downcase %}
+
+              {% if page_category == post_category %}
                 {% include post-list.html%}
               {% endif %}
             {% endfor %}
