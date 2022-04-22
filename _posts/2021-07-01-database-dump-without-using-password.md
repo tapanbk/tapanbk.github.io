@@ -38,7 +38,8 @@ data in case of a disaster and technical outage due to system error, system cras
 <h2> Database dump without password</h2>
 
 <p>
-You can read more about [The ultimate guide to mysqldump]({% post_url 2021-07-01-ultimate-guide-to-mysqldump%})
+ You can read more about
+<a href="{% post_url 2021-07-01-ultimate-guide-to-mysqldump%}">The ultimate guide to mysqldump</a>
 </p>
 <p>Sometimes we may need to schedule the script to take the database. Mysql does not allow the script to use the
 password in the script. So, you need to find the way to take backup without password.</p>
