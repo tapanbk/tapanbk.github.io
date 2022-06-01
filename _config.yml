@@ -149,7 +149,7 @@ show_comments : True
 events:
   - company: "Outcode LLC"
     location: "Naxal Kathmandu Nepal"
-    title: "Full Stack Software Engineer"
+    title: "Full Stack Engineer"
     image: "/img/timeline/gangnamtocat.png"
     date: "November 2020 - Today"
 
