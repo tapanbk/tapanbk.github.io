@@ -2,8 +2,8 @@
 layout: post
 section-type: post
 title: Ultimate Guide to mysqldump with examples
-category: database
-tags: [ 'mysql', 'server', 'database_dump' ]
+category: Database
+tags: [ 'Mysql', 'Server', 'Database_dump' ]
 permalink: ultimate-guide-to-mysql-dump-with-examples
 description: mysql dump and mysql dump examples
 ---

@@ -2,8 +2,8 @@
 layout: post
 section-type: post
 title: Guide for Mysql database dump without any password
-category: database
-tags: ['mysql' ,'database', 'linux' ]
+category: Database
+tags: ['MySQL' ,'Database', 'Linux' ]
 permalink: guide-for-mysql-database-dump-without-any-password
 description: dump mysql database without any password
 ---

@@ -2,7 +2,7 @@
 layout: post
 section-type: post
 title:  Tool to get Date Duration between two dates in hours, minutes, seconds and milliseconds
-category: server
+category: Server
 tags: ['Tool', 'JavaScript' ]
 permalink: tool-to-get-date-duration-between-two-dates-in-hours-minutes-seconds-and-milliseconds
 description: Tool to get Date Duration between two dates in hours, minutes and milliseconds

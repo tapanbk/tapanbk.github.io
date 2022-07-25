@@ -4,7 +4,7 @@ section-type: post
 title:  Access GitHub account using SSH
 
 category: Git
-tags: ['git', 'ssh', 'server']
+tags: ['Git', 'SSH', 'Server']
 permalink: how-to-access-github-account-using-ssh
 description: How to access GitHub account using SSH
 ---

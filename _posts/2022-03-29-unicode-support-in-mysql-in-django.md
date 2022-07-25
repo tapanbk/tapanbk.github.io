@@ -2,8 +2,8 @@
 layout: post
 section-type: post
 title:  How to add unicode support in mysql and django
-category: django
-tags: ['django', 'mysql',]
+category: Django
+tags: ['Django', 'MySQL',]
 permalink: how-to-add-unicode-support-in-mysql-and-django
 description: How to add unicode support in mysql and django
 ---

@@ -2,8 +2,8 @@
 layout: post
 section-type: post
 title:  Ultimate guide to increase the swap memory in Linux
-category: linux
-tags: ['linux', 'server',]
+category: Linux
+tags: ['Linux', 'Server',]
 permalink: Ultimate-guide-to-increase-the-swap-memory-of-Linux
 description: Ultimate guide to increase the swap memory of Linux
 ---
