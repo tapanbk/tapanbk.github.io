@@ -79,7 +79,7 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
   <script type="text/javascript">
   var myQuotes =  new Array();
   {% for line in site.lines %}
-    myQuotes.push("{{ line.text }}");
+    myQuotes.push("$ {{ line.text }}");
   {% endfor %}
   function shuffle(array) {
     var currentIndex = array.length, temporaryValue, randomIndex ;
