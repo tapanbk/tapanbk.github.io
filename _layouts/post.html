@@ -7,7 +7,7 @@
     {% include facebook_comment_script.html %}
     {% include navigation.html %}
 
-    <section id="post" class="container content-section text-center">
+    <section id="post" class="container-fluid content-section text-center">
       <div class="row">
         <div class="col-md-10 col-md-offset-1">
 
@@ -53,31 +53,35 @@
             </p>
           </div>
           {% endif %}
-
-          <section class="related-posts mt-2">
-              <h3>Read related posts on <span class="important sentencecase">{{page.category}}</span> category</h3>
-              <ul>
-                {% assign hasRelatedPost = false %}
-                {% for post in site.posts %}
-                {% if post.category == page.category  and post.url != page.url%}
-                {% assign hasRelatedPost = true %}
-                <li>
-                  {% include post-list.html%}
-                </li>
-                {% endif %}
-                {% endfor %}
-                {% if hasRelatedPost ==  false%}
-                <li>
-                  <span class="h3 important bold">No related posts</span>
-                </li>
-                {% endif %}
-              </ul>
-          </section>
         </div>
       </div>
     </section>
 
-    {% include footer.html %}
+    <section class="container content-section text-center">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+      <section class="related-posts">
+        <h3>Read related posts on <span class="important sentencecase">{{page.category}}</span> category</h3>
+        <ul>
+          {% assign hasRelatedPost = false %}
+          {% for post in site.posts %}
+          {% if post.category == page.category  and post.url != page.url%}
+          {% assign hasRelatedPost = true %}
+          <li>
+            {% include post-list.html%}
+          </li>
+          {% endif %}
+          {% endfor %}
+          {% if hasRelatedPost ==  false%}
+          <li>
+            <span class="h3 important bold">No related posts</span>
+          </li>
+          {% endif %}
+        </ul>
+      </section>
+      </div>
+    </div>
+    </section>
 
     {% include js.html %}
 
