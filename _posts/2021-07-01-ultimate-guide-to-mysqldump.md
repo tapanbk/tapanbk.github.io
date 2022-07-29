@@ -21,12 +21,16 @@ character to the large media files. Mysqldump is a command-line utility that is 
 packages used to create the MySQL database backup. It generated the SQL statements that can be used to recreate or
 restore the database schema and its data. The output can be generated in XML, delimited text, or CSV format.
 </p>
+</section>
 
+<section>
 <p>
 By default, mysqldump does not contain information_schema database, performance_schema and MySQL Cluster ndbinfo
 database details.
 </p>
+</section>
 
+<section>
 <p>
 A software bug or hard-drive failure could be disastrous. So, it is always a good idea to take backup of the database.
 </p>
