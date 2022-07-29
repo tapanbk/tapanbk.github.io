@@ -149,9 +149,8 @@ To connect to the mysql without entering password, you can add following lines i
 </pre>  
 </section>
 
-
 <section>
-### Note:
+<h3>Note:</h3>
 <p>
 Change the <span class="important">.my.cnf</span> file permissions
 </p>
