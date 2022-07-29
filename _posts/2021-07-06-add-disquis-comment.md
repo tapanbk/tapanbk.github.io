@@ -12,7 +12,7 @@ Guide to install disqus comment in jekyll sites
 <!--more-->
 
 <img src="{{site.baseurl}}/img/posts/disqus.png" class="img-thumbnail img-rounded" height="400px"
-alt="Guide to install disqus comment plugin in jekyll sites">
+alt="Guide to install disqus comment plugin in jekyll sites" width="100%">
 
 <section>
 <h2>What is Disqus?</h2>
@@ -112,7 +112,7 @@ It inserts ad in between comments, sometime without any comments and before comm
 
 <section>
 <img src="{{site.baseurl}}/img/posts/discuss-site-resource-used.png" class="img-thumbnail img-rounded" height="400px"
-alt="resources used by disqus">
+alt="resources used by disqus" width="100%">
 </section>
 
 

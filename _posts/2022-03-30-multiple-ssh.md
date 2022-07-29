@@ -11,12 +11,14 @@ description: How to generate multiple SSH Keys for different GitHub accounts
 Guide to generate multiple SSH Keys for different GitHub accounts
 <!--more-->
 
+<section> 
 <img
     src="{{site.baseurl}}/img/posts/github/use-multiple-ssh-keys-to-access-the-multiple-github-account.png"
     class="img-thumbnail img-rounded" height="400px" width="100%"
     title="Ultimate guide to generate multiple SSH Keys for different GitHub accounts"
     alt="Ultimate guide to generate multiple SSH Keys for different GitHub accounts">
 
+</section>
 <section>
 <p>
 This blog post is about how to generate SSH Keys for different GitHub accounts and use those keys to access different GitHub accounts.
@@ -31,24 +33,20 @@ source code management system is same.
 
 <p>
 SSH (Secure Shell) is secure cryptographic network protocol to connect with a server. The SSH protocol is mainly used to
-access the remote servers. 
-
+access the remote servers.
 </p>
 
 <p>
 SSH is based on the client server model which perform secure communication between computers with encryption and verification
 to access, configure the remote server and transmit the files to and from the remote server.
-
 </p>
 </section>
 
 <section>
-
 <h2>Generate SSH keys for personal GitHub account</h2>
 <p>For the tutorial purpose, we are considering we have two emails, one for personal use and another for office use.
 We will use <span class="important">your_personal_email@youremail.com</span> as personal email address and 
 <span class="important">your_office_email@youremail.com </span> as business uses or office uses.</p>
-
 <h3>Create to .ssh folder</h3>
 <p>
 We suggest creating the ssh keys inside the .ssh folder. If folder is not available, create using the following command
@@ -59,18 +57,22 @@ We suggest creating the ssh keys inside the .ssh folder. If folder is not availa
     cd .ssh
 </pre>
 
-<p>Use the following command in terminal to generate the SSH key for personal email</p>
+</section>
+
+<section>
+<h3>Use the following command in terminal to generate the SSH key for personal email</h3>
 
 <pre class="terminal">
     ssh-keygen -t rsa -C "your_personal_email@youremail.com"
 </pre>
 <br>
-<img
-src="{{site.baseurl}}/img/posts/github/ssh-key-generation-for-personal-email.png"
+<p>This commands will generate something like below</p>
+<img src="{{site.baseurl}}/img/posts/github/ssh-key-generation-for-personal-email.png"
 class="img-thumbnail img-rounded" height="400px" width="100%"
 title="SSH key generation for personal email address"
 alt="SSH key generation for personal email address">
 <br/>
+
 <p>The prompt will ask for the unique name. Enter the unique name that best describe the purpose or type of that email.
 For the tutorial purpose, we will go with the <span class="important">id_rsa_personal</span>.
 </p>
@@ -80,8 +82,9 @@ For the tutorial purpose, we will go with the <span class="important">id_rsa_per
     <li><span class="important">id_rsa_personal</span> private file</li>
     <li><span class="important">id_rsa_personal.pub</span>: public file which will be used in GitHub</li>
 </ul>
+</section>
 
-
+<section>
 <h2>Generate SSH keys for office GitHub account</h2>
 <p>Use the following command to generate the SSH key for the email</p>
 
@@ -89,8 +92,8 @@ For the tutorial purpose, we will go with the <span class="important">id_rsa_per
     ssh-keygen -t rsa -C "your_office_email@youremail.com"
 </pre>
 <br>
-<img
-src="{{site.baseurl}}/img/posts/github/ssh-key-generation-for-office-email.png"
+<p>It will generate something like below</p>
+<img src="{{site.baseurl}}/img/posts/github/ssh-key-generation-for-office-email.png"
 class="img-thumbnail img-rounded" height="400px" width="100%"
 title="SSH key generation for office email address"
 alt="SSH key generation for office email address">
@@ -117,11 +120,7 @@ For the tutorial purpose, we will go with the <span class="important">id_rsa_off
 
 <h3>Updating the key in the Github</h3>
 
-<p>
-
 <h4>Steps</h4>
-
-</p>
 
 <ol>
 <li>Login to your GithHub account with <span class="important">your_personal_email@youremail.com</span> email address</li>
@@ -143,6 +142,5 @@ For the tutorial purpose, we will go with the <span class="important">id_rsa_off
 <p>The steps to grab and set the public key in GitHub account is same as personal email address. Once the public key is 
 updated on the GitHub, one will be able to clone to the repo, push changes to the repo.
 </p>
-
 </section>
 
