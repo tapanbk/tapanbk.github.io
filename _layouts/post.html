@@ -32,35 +32,38 @@
           <section class="text-justify">
             {{ page.content | remove_first:page.excerpt | markdownify }}
           </section>
-          <br>
-          <p>I hope this was very helpful to you. Please feel free to leave comments, suggestions and point my mistakes
-            in the comments below
-          </p><br>
+          <section>
+            <p class="share-text">I hope this was very helpful to you. Please feel free to leave comments, suggestions and point my mistakes
+              in the comments below
+            </p>
+          </section>
 
           {% include share.html %}
           {% include comments.html %}
           <hr />
 
           {% if site.author_blurb %}
-          <div class="author row">
-            <img class="col-xs-4 col-sm-3 col-md-2 img-circle img-thumbnail"
-                 src="{{site.baseurl}}{{site.author_blurb_image}}"
-                 alt="Tapan B.K. | Full Stack Software Engineer"
-                 title="Tapan B.K. | Full Stack Software Engineer"
-             />
-            <p class="col-xs-8 col-sm-9 col-md-10">
-              {{ site.author_blurb }}
-            </p>
-          </div>
+          <section>
+            <div class="author row">
+              <img class="col-xs-4 col-sm-3 col-md-2 img-circle img-thumbnail"
+                   src="{{site.baseurl}}{{site.author_blurb_image}}"
+                   alt="Tapan B.K. | Full Stack Software Engineer"
+                   title="Tapan B.K. | Full Stack Software Engineer"
+               />
+              <p class="col-xs-8 col-sm-9 col-md-10">
+                {{ site.author_blurb }}
+              </p>
+            </div>
+          </section>
           {% endif %}
         </div>
       </div>
     </section>
 
-    <section class="container content-section text-center">
+    <section class="container content-section text-center related-posts">
     <div class="row">
       <div class="col-md-10 col-md-offset-1">
-      <section class="related-posts">
+      <section class="">
         <h3>Read related posts on <span class="important sentencecase">{{page.category}}</span> category</h3>
         <ul>
           {% assign hasRelatedPost = false %}

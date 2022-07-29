@@ -14,8 +14,8 @@ Learn to dump mysql database without any password on inline query.
 <img src="{{site.baseurl}}/img/posts/database-dump.jpg"
 class="img-thumbnail img-rounded" height="400px" width="100%" alt="database-dump">
 </section>
-<section>
 
+<section>
 <h2>Database backup</h2>
 <p>
 <span class="important">Database backup </span> is the process of storing the copy of database at safe place for
@@ -34,61 +34,50 @@ data in case of a disaster and technical outage due to system error, system cras
 </section>
 
 <section>
-
 <h2> Database dump without password</h2>
-
 <p>
  You can read more about
 <a href="{% post_url 2021-07-01-ultimate-guide-to-mysqldump%}">The ultimate guide to mysqldump</a>
 </p>
 <p>Sometimes we may need to schedule the script to take the database. Mysql does not allow the script to use the
 password in the script. So, you need to find the way to take backup without password.</p>
+</section>
 
-
+<section>
 <p>
 You can disable the mysqldump password prompting using the following configuration
 </p>
-
 <p>The configuration is based on Ubuntu OS.</p>
-
-
 </section>
 
 <section>
 <p>
 1.Create a new file <span class="important">.my.conf</span> at home directory of the user
 </p>
-
-
 <pre class="terminal">
     sudo nano ~/.my.cnf  
 </pre>  
 <p>This commands takes user to the home directory, creates <span class="important">.my.cnf</span> file and opens using the nano. You can use the text editor
 or IDE of you choice</p>
+</section>
 
-
+<section>
 <p>2.Enter the database user and password details in the <span class="important">.my.cnf</span> file</p>
-
-
-
 <pre class="terminal">
     [mysqldump]
     user=mysqluser
     password=mysql_user_password   
-</pre>    
-
+</pre>
 <p>
 This configuration allows user to connect to the mysql without entering any password. Due to this configuration,
 you don't need to use <span class="important">-p</span> or <span class="important">--password</span> in mysql and mysqldump command.
-
 </p>
-
 <p>
 The commands to take database backup without any password is:
 </p>
+</section>
 
-
-
+<section>
 <pre class="terminal">
     mysqldump –u mysqluser my_database > my_database_dump.sql
 </pre>  
@@ -100,8 +89,6 @@ The commands to take database backup without any password is:
 The default locations of conf files that mysql looks at in linux are:
 </p>
 
-
-
 <pre class="terminal">
     ~/.my.cnf
     /etc/my.cnf
@@ -109,12 +96,12 @@ The default locations of conf files that mysql looks at in linux are:
     $MYSQL_HOME/my.cnf
     [datadir]/my.cnf
 </pre>      
+</section>
 
+<section>
 <p>
 The default locations of conf files that mysql looks at in windows are:
 </p>
-
-
 <pre class="terminal">
     C:\Windows\my.ini
     C:\Windows\my.cnf
@@ -135,19 +122,18 @@ You need to create the file in one of the location.
 You can find the location of .my.cnf in linux using following commands
 </p>
 
-
 <pre class="terminal">
     locate my.cnf
     whereis my.cnf
     find . -name my.c
 </pre>      
+</section>
 
+<section>
 <p>
 If you .my.cnf file is not at above-mentioned default locations, you  can specify the default file location using
 <span class="important">--default-file</span> option
 </p>
-
-
 
 <pre class="terminal">
     mysqldump --defaults-file=/path-to-my-cnf-file/.my.cnf –u mysql_user my_database > my_database_dump.sql
@@ -155,8 +141,6 @@ If you .my.cnf file is not at above-mentioned default locations, you  can specif
 <p>
 To connect to the mysql without entering password, you can add following lines in the .my.cnf file
 </p>
-
-
 
 <pre class="terminal">
     [mysql]
@@ -167,14 +151,11 @@ To connect to the mysql without entering password, you can add following lines i
 
 
 <section>
-
 ### Note:
 <p>
 Change the <span class="important">.my.cnf</span> file permissions
 </p>
-
 <pre class="terminal">
     sudo chmod 600 ~/.my.cnf 
-</pre>      
-
+</pre>
 </section>
