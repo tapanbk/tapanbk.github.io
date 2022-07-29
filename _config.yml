@@ -65,7 +65,7 @@ lines: # You can add HTML Tags in the Text
   - text: "The lower you fall, the higher you'll fly."
   - text: "Where’s your will to be weird?"
   - text: "Be Awesome"
-  - text: "Don’t worry if it does n’t work right. If everything did, you’d be out of a job."
+  - text: "Don’t worry if it does not work right. If everything did, you’d be out of a job."
   - text: "In order to understand recursion, one must first understand recursion"
   - text: "Things are not always #000000 and #FFFFFF"
   - text: "If at first you don’t succeed; call it version 1.0"
@@ -73,6 +73,14 @@ lines: # You can add HTML Tags in the Text
   - text: "Without requirements or design, programming is the art of adding bugs to an empty text file."
   - text: "One: Demonstrations always crash. And two: The probability of them crashing goes up exponentially with the number of people watching."
   - text: "How many programmers does it take to change a light bulb? None, that’s a hardware problem."
+  - text: "You can’t connect the dots looking forward; you can only connect them looking backwards."
+  - text: "Stay Hungry, Stay Foolish."
+  - text: "Have the courage to follow your heart and intuition. They somehow already know what you truly want to become."
+  - text: "Let’s go invent tomorrow instead of wondering about what happened yesterday."
+  - text: "I am as proud of what we don’t do as I am of what we do."
+  - text: "It’s not the customer’s job to know what they want."
+  - text: "If something sucks, I tell people to their face. It’s my job to be honest."
+  - text: "People don’t know what they want until they’ve seen it."
 
 me-img: "/img/tapanbk_small.jpg"
 

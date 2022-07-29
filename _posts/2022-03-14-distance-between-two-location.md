@@ -15,10 +15,13 @@ class="img-thumbnail img-rounded" height="400px"
 width="100%"
 alt="Distance between two locations based on latitude and longitude">
 
+<section>
 <p>Wondering how to get the distance between the two location? This tools helps to get the distance between the location
 based on their latitude and longitude. This tools helps to get the distance in straight line.
 </p>
+</section>
 
+<section>
 <div class="jumbotron distance-calculator-form">
     <div class="row">
         <div class="col-md-6">
@@ -72,16 +75,18 @@ based on their latitude and longitude. This tools helps to get the distance in s
         </div>
     </div>
 </div>
+</section>
 
-<p>
-    <h5>Steps to find the distance two location:</h5>
-    <ol>
-        <li>Enter the comma separated latitude and longitude of the origin address like 27.12312, 85.123213</li>
-        <li>Enter the comma separated latitude and longitude of the Destination address like 27.22312, 85.523213</li>
-        <li>Hit Submit button. You will get the distance between the origin and destination in both miles and Kilometres </li>
-    </ol>
-</p>
+<section>
+<h5>Steps to find the distance two location:</h5>
+<ol>
+    <li>Enter the comma separated latitude and longitude of the origin address like 27.12312, 85.123213</li>
+    <li>Enter the comma separated latitude and longitude of the Destination address like 27.22312, 85.523213</li>
+    <li>Hit Submit button. You will get the distance between the origin and destination in both miles and Kilometres </li>
+</ol>
+</section>
 
+<section>
 <h3>  JavaScript formula to get the distance between two locations based on their latitude and longitude </h3>
  
 <pre class="terminal">
@@ -126,6 +131,7 @@ based on their latitude and longitude. This tools helps to get the distance in s
         }
     }
 </pre>
+</section>
 <style>
     .jumbotron{
         background-color: #1d3752;

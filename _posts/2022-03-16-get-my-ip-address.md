@@ -13,9 +13,10 @@ Tools to Get My IP address
 <img src="{{site.baseurl}}/img/posts/what-is-an-ip-address-image.jpg"
 class="img-thumbnail img-rounded" height="400px" alt="What is my ip address">
 
-<p>Wondering how to get your current public ip address? This tools helps to get  your public ip address 
+<section>
+<p>Wondering how to get your current public ip address? This tools helps to get  your public ip address with some 
+basic description.
 </p>
-
 
 <div class="row d-none" id="ipAddressCard">
     <div class="col-md-12 text-primary">
@@ -26,7 +27,9 @@ class="img-thumbnail img-rounded" height="400px" alt="What is my ip address">
 </div>
 
 <h3>  JavaScript Code to get  your public IP address </h3>
+</section>
 
+<section>
 <pre class="terminal">
     // Get the current public IP address details
     const url = 'https://ipinfo.io/json?token="your-token"';
@@ -34,6 +37,7 @@ class="img-thumbnail img-rounded" height="400px" alt="What is my ip address">
         const location_data = JSON.stringify(data, null, 2);
     });
 </pre>
+</section>
 
 <style>
     .jumbotron{

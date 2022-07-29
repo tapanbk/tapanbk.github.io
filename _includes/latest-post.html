@@ -19,10 +19,12 @@
     <div class="col-md-10 col-md-offset-1" style="margin-top: 4rem">
       <h4>All Categories</h4>
       {% for categories in site.categories %}
-      <h5 class="uppercase">
-        <a class="category" href="{{site.baseurl}}/categories/{{categories[0] | downcase}}.html">
-          {{ categories[0] }}</a>
-      </h5>
+        <div class="categories-list">
+          <h5 class="uppercase">
+            <a class="category" href="{{site.baseurl}}/categories/{{categories[0] | downcase}}.html">
+              {{ categories[0] }}</a>
+          </h5>
+        </div>
       {% endfor %}
     </div>
   </div>

@@ -10,12 +10,17 @@ description: Tools to convert from px to rem and from rem to px
 Tools to convert from px to rem and from rem to px
 <!--more-->
 
-<img src="{{site.baseurl}}/img/posts/px-rem.png" class="img-thumbnail img-rounded" height="400px" alt="px-to-rem">
+<img src="{{site.baseurl}}/img/posts/px-rem.png" class="img-thumbnail img-rounded" height="400px" 
+alt="Tool to convert px-to-rem" width="100%">
 
+<section>
 <p>This tools helps to convert from px to rem and rem to px.
 This tools can be handy to convert the px to rem and rem to px respectively. We can also change the root font size and get the conversion based on the the 
 root font size.
 </p>
+</section>
+
+<section>
 <form>
     <div class="row">
         <div class="offset-md-4 col-md-4">
@@ -40,6 +45,9 @@ root font size.
         </div>
     </div>
 </form>
+</section>
+
+<section>
 <p style="margin-top: 3rem">Conversion Table</p>
 <div class="row">
     <div class="col-md-6">
@@ -67,3 +75,4 @@ root font size.
         </table>
     </div>
 </div>
+</section>

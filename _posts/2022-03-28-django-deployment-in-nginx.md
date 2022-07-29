@@ -26,11 +26,10 @@ is similar in all the cloud services. However, following steps are based on AWS 
 </section> 
 
 <section>
-
 <h2>Basic architecture of the setup environment.</h2> 
 <img 
     src="{{site.baseurl}}/img/posts/django-nginx-setup-architecture.jpg" 
-    alt="Django Nginx Setup Architecture"
+    alt="Django Nginx Setup Architecture" width="100%"
     title="Django Nginx Setup Architecture">
 <br>
 </section>
@@ -72,6 +71,9 @@ is similar in all the cloud services. However, following steps are based on AWS 
     virtualenv venv -p python3
 </pre>
 <p>-p python3 parameter is used to set the python3 interpreter.</p>
+</section>
+
+<section>
 <h4>Activate Virtual environment</h4>
 <pre class="terminal">
     source venv/bin/activate
@@ -91,8 +93,10 @@ is similar in all the cloud services. However, following steps are based on AWS 
     sudo cp config/settings/env.example.py config/settings/env.py
     sudo nano config/settings/env.py
 </pre>
-  
 
+</section>
+
+<section>
 <p>Most of the project have .env.example file in the root folder of the project. Copy and update the file</p>
 <pre class="terminal">
     sudo cp .env.example .env
@@ -113,6 +117,9 @@ can be configured in env file.
     MEDIA_URL = '/media/'
     MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 </pre>
+</section>
+
+<section>
 <h3>To create the blank logs, static and media folder. Run following command</h3>
 <pre class="terminal">
     mkdir logs static media
@@ -134,6 +141,9 @@ folders along side the project folder inside <span class="important">/home/ubunt
 <pre class="terminal">
     mkdir bin logs run
 </pre>
+</section>
+
+<section>
 <h5>Create a log file for gunicorn inside the logs folder</h5>
 <pre class="terminal">
     touch /home/ubuntu/logs/gunicorn-error.log

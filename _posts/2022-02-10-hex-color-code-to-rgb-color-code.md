@@ -13,24 +13,28 @@ Tools to convert from HEX color code to RGB color code
 <img src="{{site.baseurl}}/img/posts/hex-to-rgb.png"
 class="img-thumbnail img-rounded" height="400px" alt="hex-color-code-to-rgb-color-code">
 
+<section>
 <p>This tools helps to convert from hex color code to RGB color code.
 </p>
 <form>
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-6">
             <div class="form-group">
                 <label for="hexField">Hex Color Code</label>
                 <input type="text" class="form-control" id="hexField" placeholder="fffff or fff">
             </div>
         </div>
-        <div class="col-md-8">
+        <div class="col-md-6">
             <div class="form-group">
                 <label for="RGBField">RGB Value Generated</label>
-                <p class="bg-primary py-3 px-3" id="RGBField" style="padding-left: 1.5rem">Please enter the Hex code</p>
+                <p class="bg-primary  px-3" id="RGBField" style="padding-left: 1.5rem; margin: unset!important;">Please enter the Hex code</p>
             </div>
         </div>
     </div>
 </form>
+</section>
+
+<section>
 
 <p style="margin-top: 3rem">Popular Hex code</p>
 <div class="row">
@@ -49,3 +53,4 @@ class="img-thumbnail img-rounded" height="400px" alt="hex-color-code-to-rgb-colo
         </table>
     </div>
 </div>
+</section>

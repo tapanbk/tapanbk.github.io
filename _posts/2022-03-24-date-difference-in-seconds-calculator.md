@@ -14,6 +14,7 @@ Date Duration between two dates in hours, minutes, seconds and milliseconds
 class="img-thumbnail img-rounded" height="400px"
 title="Date Duration between two dates in hours, minutes, seconds and milliseconds"
 alt="Date Duration between two dates in hours, minutes, seconds and milliseconds">
+
 <section class="date-calculator-description">
     <p>This tool helps to get the date duration in hours, minutes, seconds and  milliseconds based on the start date and end date passed.
     It takes the start date and end date and find the difference in hours, minutes, seconds and  milliseconds

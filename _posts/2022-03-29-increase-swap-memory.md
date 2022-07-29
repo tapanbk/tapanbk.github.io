@@ -12,7 +12,7 @@ Ultimate guide to increase the swap memory in Linux
 
 <img
     src="{{site.baseurl}}/img/posts/increase-swap-memory-in-linux.jpeg.jpeg"
-    class="img-thumbnail img-rounded" height="400px"
+    class="img-thumbnail img-rounded" height="400px" width="100%"
     title="Ultimate guide to increase the swap memory of Linux"
     alt="Ultimate guide to increase the swap memory of Linux">
 
@@ -34,6 +34,7 @@ concurrent program running in the system and the size of the individual program 
 the program increases, more RAM is needed in the system along with high spec CPU. 
 </p>
 </section>
+
 <section>
 <h2>Why swap memory is needed in the system?</h2>
 
@@ -60,7 +61,8 @@ other program that need to be processed urgently.
 
 
 <section>
-<h2>Size of Swap Memory</h2>
+<h3>Size of Swap Memory</h3>
+
  <table class="table table-hover">
         <thead>
         <tr>
@@ -91,7 +93,7 @@ other program that need to be processed urgently.
                 <td>Hibernation not recommended</td>
             </tr>
         </tbody>
-      <caption>Recommended system swap space in Fedora 28's documentation.</caption>
+      <caption class="text-dark">Recommended system swap space in Fedora 28's documentation.</caption>
     </table>
 </section>
 
@@ -102,6 +104,9 @@ other program that need to be processed urgently.
 <pre class="terminal">
     sudo fallocate -l 4G /swapfile
 </pre>
+</section>
+
+<section>
 <h3>Fix the swap file error</h3>
 <p>Here 4G is the size of the swap file. You can set the size of swap file based on your necessity.</p>
 <p>If fallocate is not installed or if you get an error message saying fallocate failed: Operation not supported then
@@ -110,9 +115,7 @@ you can use the following command to create the swap file:</p>
 <pre class="terminal">
      sudo dd if=/dev/zero of=/swapfile bs=4096 count=1048576
 </pre>
-
 </section>
-
 
 <section>
 <h3>Set the correct permissions</h3>
@@ -121,22 +124,23 @@ you can use the following command to create the swap file:</p>
 <pre class="terminal">
     sudo chmod 600 /swapfile
 </pre>
+</section>
 
+<section>
 <p> Use the mkswap utility to set up the file as Linux swap area:</p>
 <pre class="terminal">
     sudo mkswap /swapfile
 </pre>
-
 </section>
 
 <section>
 <h3>Enable the swap with the following command:</h3>
 <p>Enter the following command enables the swap file</p>
-</section>
-
 <pre class="terminal">
     sudo swapon /swapfile
 </pre>
+</section>
+
 <section>
 <h3>Make the swap file permanent</h3>
 <p>To make the swap file permanent, open the /etc/fstab file and append the following line:</p>
@@ -153,6 +157,7 @@ you can use the following command to create the swap file:</p>
     sudo swapon --show
 </pre>
 </section>
+
 <section>
 <h2>Delete the swap file</h2>
 <p>Sometime you mau want to remove the swap file. Run the following command to remove the swap</p>
@@ -160,7 +165,9 @@ you can use the following command to create the swap file:</p>
 <pre class="terminal">
     sudo swapoff -v /swapfile
 </pre>
+</section>
 
+<section>
 <h3>Remove entry from fstab file</h3>
 <p>Remove the swap file entry <span class="important">/swapfile swap swap defaults 0 0</span> from the 
 <span class="important"> /etc/fstab</span> file.</p>

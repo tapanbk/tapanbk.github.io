@@ -390,7 +390,7 @@ ul.social-buttons li a {
 footer {
     padding: 50px 0 10px;
     text-align: center;
-    p {
+    p{
         margin: 0;
     }
 }
@@ -714,5 +714,14 @@ section{
     h2, h3, h4, h5{
         margin-top: 4rem;
         font-weight: 700;
+    }
+}
+caption{
+    color: #ffffff;
+}
+
+section .categories-list {
+    h1, h2, h3, h4, h5{
+        margin-top: 2rem;
     }
 }

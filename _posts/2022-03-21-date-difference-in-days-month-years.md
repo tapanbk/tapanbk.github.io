@@ -14,6 +14,7 @@ Date Duration difference between two dates in years, months and days
 class="img-thumbnail img-rounded" height="400px"
 title="Date Duration difference between two dates in years, months and days"
 alt="Date Duration difference between two dates in years, months and days">
+
 <section class="date-calculator-description">
     <p>This tool helps to get the date duration in years, months and  days based on the start date and end date passed.
     It takes the start date and end date and find the difference in years, months and days

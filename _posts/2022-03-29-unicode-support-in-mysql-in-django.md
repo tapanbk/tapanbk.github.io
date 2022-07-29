@@ -10,13 +10,13 @@ description: How to add unicode support in mysql and django
 Guide to add unicode support in mysql and django
 <!--more-->
 
+<section>
 <img
     src="{{site.baseurl}}/img/posts/django-mysql-unicode-support.png"
-    class="img-thumbnail img-rounded" height="400px"
+    class="img-thumbnail img-rounded" height="400px" width="100%"
     title="Ultimate guide to  add unicode support in mysql and django"
     alt="Ultimate guide to  add unicode support in mysql and django">
 
-<section>
 <p>
 This blog post is about how to add unicode support in Django in MySQL database.
 </p>
@@ -33,8 +33,8 @@ This blog post is about how to add unicode support in Django in MySQL database.
     create database my_db_name character set utf8mb4;
 </pre>
 </section>
-<section>
 
+<section>
 <h2>Update database setting</h2>
 <p>
    Since, the blog focused on the mysql, the engine value is obvious. Add the additional settings  on options for 
@@ -58,11 +58,12 @@ the settings.py file
 <section>
 <h2>Update the mysql configuration file</h2>
 <p>Open the <span class="important">my.cnf</span> file located in  <span class="important">/etc/mysql/</span> folder</p>
-
 <pre class="terminal">
     sudo nano /etc/mysql/my.cnf
 </pre>
+</section>
 
+<section>
 <p>Update the configuration details as below:</p>
 
 <pre class="terminal">
@@ -78,6 +79,7 @@ the settings.py file
     collation-server = utf8mb4_unicode_ci
 </pre>
 </section>
+
 <section>
 <h3>Changes on Existing database</h3>
 <p>There are chances that you want to set the unicode support for existing database. You can update the mysql database 
@@ -85,8 +87,6 @@ setting by running the following code in mysql command line tool.
 </p>
 
 <p>To run the command, first login to the command line tool by using: </p>
-
-
 <pre class="terminal">
     mysql -u mysql_user -p
 </pre>
@@ -96,6 +96,5 @@ setting by running the following code in mysql command line tool.
     ALTER DATABASE my_db_name CHARACTER SET = utf8mb4 COLLATE utf8mb4_unicode_ci;
 </pre>
 </section>
-<section></section>
-<section></section>
+
 
