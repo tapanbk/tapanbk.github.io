@@ -714,6 +714,16 @@ section{
         margin-top: 4rem;
         font-weight: 700;
     }
+    .timeline-body,  .timeline-heading, .timeline-location{
+        line-height: 1.5rem;
+        font-size: 2rem;
+        p{
+            text-align: unset;
+            line-height: 1.5rem;
+            font-size: 2rem;
+        }
+
+    }
 }
 caption{
     color: #ffffff;
