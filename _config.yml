@@ -32,7 +32,7 @@ force-https: True
 
 lang: "en"
 author: "Tapan B.K."
-title: "Tapan BK"
+title: "Tapan B.K."
 description: "Blog and website of Tapan B.K., blogging mainly for tech. Opinions expressed are mine."
 keywords: "Tapan B.K., tapan, full stack software engineer, python, Angular, JS"
 favicon: "/img/favicon.png"
