@@ -5,7 +5,6 @@ title: Ultimate guides to crontab and some awesome example
 category: Server
 tags: [ 'Linux', 'Crontab', 'System Admin' ]
 permalink: ultimate-guides-to-crontab-and-some-awesome-examples
-description: Ultimate guide to crontab and their examples
 ---
 
 Read about ultimate guides to crontab with some awesome example

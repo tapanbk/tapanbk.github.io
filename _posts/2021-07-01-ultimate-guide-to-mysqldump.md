@@ -5,7 +5,6 @@ title: Ultimate Guide to mysqldump with examples
 category: Database
 tags: [ 'Mysql', 'Server', 'Database_dump' ]
 permalink: ultimate-guide-to-mysql-dump-with-examples
-description: mysql dump and mysql dump examples
 ---
 
 Read an article on ultimate guide on mysql dump and some examples

@@ -5,7 +5,6 @@ title: Hex Color code to RGB Convertor tool
 category: Designing
 tags: ['CSS' ,'Frontend','Designing' ,'Tool' ]
 permalink: hex-color-code-to-rgb-convertor-tool
-description: Tools to convert from HEX color code to RGB color code
 ---
 Tools to convert from HEX color code to RGB color code
 <!--more-->

@@ -6,7 +6,6 @@ title:  Install Let's Encrypt Free SSL/TLS Certificates with NGINX
 category: Server
 tags: ['SSL', 'Server']
 permalink: how-to-install-let's-encrypt-free-ssl-certificate-with-nginx
-description: How to install Certbot Free SSL/TLS Certificates with NGINX
 ---
 Guide to Install Let's Encrypt Free SSL/TLS Certificates with NGINX | Certbot Installation
 <!--more-->

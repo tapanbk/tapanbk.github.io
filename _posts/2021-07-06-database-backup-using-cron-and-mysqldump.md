@@ -5,7 +5,6 @@ title: Guide to back up database using the cron job and mysql dump
 category: Database
 tags: ['MySQL' ,'Database', 'Linux' ]
 permalink: database-dump-with-cron-jobs-and-mysql-dump
-description: Guide to back up database using the cron job and mysql dump
 ---
 
 Read post on guide to back up database using the cron job and mysqldump

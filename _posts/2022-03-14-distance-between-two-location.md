@@ -5,7 +5,6 @@ title:  distance between two location based on their latitude and  longitude
 category: Designing
 tags: ['Maps' ,'Tool', 'JavaScript', 'Frontend' ]
 permalink: how-to-get-distance-between-two-location
-description: how to get distance between latitude and longitude?
 ---
 Tools to Get distance between two location based on latitude and longitude
 <!--more-->

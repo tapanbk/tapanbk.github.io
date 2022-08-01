@@ -4,7 +4,6 @@ section-type: post
 title: Install Jekyll SEO Tag in the jekyll sites
 category: Jekyll
 tags: ['Jekyll' ,'Github-pages' ]
-description: Install jekyll seo tag in the jekyll sites
 permalink: install-jekyll-seo-tag-in-the-jekyll-sites
 ---
 

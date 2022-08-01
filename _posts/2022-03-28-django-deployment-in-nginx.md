@@ -5,7 +5,6 @@ title:  Ultimate guide to deploy django in Nginx Server with supervisor and Guni
 category: Server
 tags: ['Django', 'Nginx' ,'Server']
 permalink: ultimate-guide-to-deploy-django-in-nginx-server-with-supervisor-and-gunicorn
-description: Ultimate guide to deploy django in Nginx Server with supervisor and Gunicorn
 ---
 Ultimate guide to deploy django in Nginx Server with supervisor and Gunicorn
 <!--more-->

@@ -5,7 +5,6 @@ title: Add Disqus comments plugins in the jekyll site
 category: Jekyll
 tags: ['Jekyll' ,'Github-pages']
 permalink: guide-to-install-disqus-comment-in-jekyll-sites
-description: Guide to install disqus comment plugin in jekyll sites
 ---
 
 Guide to install disqus comment in jekyll sites

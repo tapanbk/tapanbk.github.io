@@ -5,7 +5,6 @@ title: PX to REM and Rem to PX Convertor tool
 category: Designing
 tags: ['CSS' ,'Frontend','Designing' ,'Tool' ]
 permalink: px-to-rem-and-rem-to-px-convertor-tool
-description: Tools to convert from px to rem and from rem to px
 ---
 Tools to convert from px to rem and from rem to px
 <!--more-->
