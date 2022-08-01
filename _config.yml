@@ -100,6 +100,18 @@ lines: # You can add HTML Tags in the Text
   - text: "Deleted code is debugged code. -Jeff Sickel"
   - text: "There are only two kinds of programming languages: those people always bitch about and those nobody uses. -Bjarne Stroustrup-"
   - text: "The trouble with programmers is that you can never tell what a programmer is doing until it’s too late. -Seymour Cray"
+  - text: "Coding like poetry should be short and concise"
+  - text: "First, solve the problem. Then, write the code. – John Johnson"
+  - text: "Make it work, make it right, make it fast. – Kent Beck"
+  - text: "Clean code always looks like it was written by someone who cares. — Robert C. Martin"
+  - text: "Of course, bad code can be cleaned up. But it’s very expensive.” — Robert C. Martin"
+  - text: "Experience is the name everyone gives to their mistakes. – Oscar Wilde"
+  - text: "You might not think that programmers are artists, but programming is an extremely creative profession. It’s logic-based creativity. – John Romero"
+  - text: "There is always one more bug to fix.  – Ellen Ullman"
+  - text: "That’s what’s cool about working with computers.  They don’t argue, they remember everything, and they don’t drink all your beer."
+  - text: "I don’t care if it’s the proper way to do it, just get it done!"
+  - text: "Cheap, fast, reliable — Pick two"
+  - text: "What about 19 Jan 2038 at 3:14:07 AM?"
 
 me-img: "/img/tapanbk_small.jpg"
 
