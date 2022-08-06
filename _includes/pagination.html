@@ -8,7 +8,7 @@
         <span class="glyphicon glyphicon-chevron-left"></span>Previous Posts
       </button>
       <button type="button" class="btn btn-primary  {% unless paginator.next_page  %}disabled{% endunless %}"
-              {% if unless paginator.next_page  %}disabled{% endunless %}
+              {% unless paginator.next_page  %}disabled{% endunless %}
               style="font-size: 2.5rem; margin-left: 1rem; border-radius: 7px"
               onclick="location.href='{{site.baseurl}}{{paginator.next_page_path}}';">
         Next Posts
