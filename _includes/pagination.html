@@ -1,14 +1,14 @@
 {% if paginator.previous_page or paginator.next_page %}
   <div class="pagination" >
     <h4>
-      <button type="button" class="btn btn-primary  {% if paginator.previous_page  %}disabled{% endif %}"
-              {% if paginator.previous_page  %}disabled{% endif %}
+      <button type="button" class="btn btn-primary  {% if ! paginator.previous_page  %}disabled{% endif %}"
+              {% if ! paginator.previous_page  %}disabled{% endif %}
               onclick="location.href='{{site.baseurl}}{{paginator.previous_page_path}}';"
               style="font-size: 2.5rem; margin-right: 1rem; border-radius: 7px">
         <span class="glyphicon glyphicon-chevron-left"></span>Previous Posts
       </button>
-      <button type="button" class="btn btn-primary  {% if paginator.next_page  %}disabled{% endif %}"
-              {% if paginator.next_page  %}disabled{% endif %}
+      <button type="button" class="btn btn-primary  {% if ! paginator.next_page  %}disabled{% endif %}"
+              {% if ! paginator.next_page  %}disabled{% endif %}
               style="font-size: 2.5rem; margin-left: 1rem; border-radius: 7px"
               onclick="location.href='{{site.baseurl}}{{paginator.next_page_path}}';">
         Next Posts
