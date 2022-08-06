@@ -111,9 +111,9 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
   <!-- Dynamic Typing End  -->
 {% endif %}
 <script>
-function addTohistory() {
+function addToHistory() {
   if (!window.location.host.startsWith("127.0.0.1")) {
-    history.pushState({}, '{{page.title}}', '{{site.url}}{{site.baseurl}}{{page.url}}');
+    history.pushState({}, "{{page.title}}", "{{site.url}}{{site.baseurl}}{{page.url}}");
   }
 }
 </script>
@@ -126,7 +126,7 @@ function addTohistory() {
       var post = document.getElementById('post');
 
       new Hammer(post).on('swipeleft', function(event) {
-        addTohistory();
+        addToHistory();
         {% if site.baseurl == "" and page.previous == nil %}
           document.location.replace("/");
         {% else %}
@@ -134,7 +134,7 @@ function addTohistory() {
         {% endif %}
       });
       new Hammer(post).on('swiperight', function(event) {
-        addTohistory();
+        addToHistory();
         {% if site.baseurl == "" and page.next == nil %}
           document.location.replace("/");
         {% else %}
@@ -151,7 +151,7 @@ function addTohistory() {
       var page = document.getElementById('page');
 
       new Hammer(page).on('swipeleft', function(event) {
-        addTohistory();
+        addToHistory();
         {% if site.baseurl == "" and paginator.next_page_path == nil %}
           document.location.replace("/");
         {% else %}
@@ -159,7 +159,7 @@ function addTohistory() {
         {% endif %}
       });
       new Hammer(page).on('swiperight', function(event) {
-        addTohistory();
+        addToHistory();
         {% if site.baseurl == "" and paginator.previous_page_path == nil %}
           document.location.replace("/");
         {% else %}
