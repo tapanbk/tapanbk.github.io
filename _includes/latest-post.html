@@ -1,10 +1,10 @@
-<section id="{{ page.section-type }}" class="container-fluid content-section text-center">
-    <div class="row">
+<div id="{{ page.section-type }}" class="container-fluid content-section text-center">
+  <div class="row">
+    <section>
       <div class="col-md-10 col-md-offset-1">
         {{ page.content | markdownify }}
-
         {% for post in site.posts limit:5 %}
-        <h4> <strong> {{ post.date | date_to_string }} </strong>
+        <h4><strong> {{ post.date | date_to_string }} </strong>
           <small>.
             <a class="category" href="{{site.baseurl}}/categories/{{post.category | downcase}}.html">
               {{ post.category }}
@@ -14,27 +14,28 @@
         </h4>
         {% endfor %}
       </div>
+    </section>
+    <section>
       <div class="col-md-10 col-md-offset-1">
         {% include pagination.html %}
       </div>
-    </div>
-</section>
-
-<section>
-  <div class="row">
-    <div class="col-md-10 col-md-offset-1" style="margin-top: 4rem">
-      <h4>All Categories</h4>
-      {% for categories in site.categories %}
+    </section>
+  </div>
+  <section>
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1" style="margin-top: 4rem">
+        <h4>All Categories</h4>
+        {% for categories in site.categories %}
         <div class="categories-list">
           <h5 class="uppercase">
             <a class="category" href="{{site.baseurl}}/categories/{{categories[0] | downcase}}.html">
               {{ categories[0] }}</a>
           </h5>
         </div>
-      {% endfor %}
+        {% endfor %}
+      </div>
     </div>
-  </div>
-  <h4  style="margin-top: 3rem" class="uppercase"><a href="{{site.baseurl}}/blog/">Go to all Archives lists</a></h4>
-
-</section>
+    <h4 style="margin-top: 3rem" class="uppercase"><a href="{{site.baseurl}}/blog/">Go to all Archives lists</a></h4>
+  </section>
+</div>
 
