@@ -14,13 +14,13 @@ Ultimate guide on python packaging - Tapan BK
 <img
     src="{{site.baseurl}}/img/posts/python-modules-and-packages.jpg"
     class="img-thumbnail img-rounded" height="400px" width="100%"
-    title="Install Let's Encrypt Free SSL/TLS Certificates with NGINX"
-    alt="Install Let's Encrypt Free SSL/TLS Certificates with NGINX">
+    title="Ultimate guide on python packaging"
+    alt="Ultimate guide on python packaging">
 
 <section>
 
 <p>
-This blog post is about the python, it's packaging for distribution
+This blog post is about the python, modules and packages
 </p>
 </section> 
 
