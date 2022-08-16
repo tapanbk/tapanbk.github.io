@@ -7,7 +7,8 @@ tags: ['Jekyll' ,'Github-pages']
 permalink: guide-to-install-disqus-comment-in-jekyll-sites
 ---
 
-Guide to install disqus comment in jekyll sites
+Guide to install disqus comment in jekyll sites - Tapan BK
+
 <!--more-->
 
 <img src="{{site.baseurl}}/img/posts/disqus.png" class="img-thumbnail img-rounded" height="400px"

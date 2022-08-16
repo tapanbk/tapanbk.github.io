@@ -6,7 +6,8 @@ category: Designing
 tags: ['CSS' ,'Frontend','Designing' ,'Tool' ]
 permalink: hex-color-code-to-rgb-convertor-tool
 ---
-Tools to convert from HEX color code to RGB color code
+Tools to convert from HEX color code to RGB color code - Tapan BK
+
 <!--more-->
 
 <img src="{{site.baseurl}}/img/posts/hex-to-rgb.png"

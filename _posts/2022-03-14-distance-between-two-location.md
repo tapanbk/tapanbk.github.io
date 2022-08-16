@@ -6,7 +6,8 @@ category: Designing
 tags: ['Maps' ,'Tool', 'JavaScript', 'Frontend' ]
 permalink: how-to-get-distance-between-two-location
 ---
-Tools to Get distance between two location based on latitude and longitude
+Tools to Get distance between two location based on latitude and longitude - Tapan BK
+
 <!--more-->
 
 <img src="{{site.baseurl}}/img/posts/distance-between-two-lat-lng.jpg"

@@ -6,7 +6,8 @@ category: Server
 tags: ['Tool', 'JavaScript' ]
 permalink: tool-to-get-date-duration-between-two-dates-years-months-and-days
 ---
-Date Duration difference between two dates in years, months and days
+Date Duration difference between two dates in years, months and days - Tapan BK
+
 <!--more-->
 
 <img src="{{site.baseurl}}/img/posts/date-duration-calculator.png" width="100%"

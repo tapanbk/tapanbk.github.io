@@ -6,7 +6,8 @@ category: Database
 tags: ['MySQL' ,'Database', 'Linux' ]
 permalink: guide-for-mysql-database-dump-without-any-password
 ---
-Learn to dump mysql database without any password on inline query.
+Learn to dump mysql database without any password on inline query - Tapan BK
+
 <!--more-->
 
 <section>

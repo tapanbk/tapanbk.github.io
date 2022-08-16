@@ -6,7 +6,8 @@ category: Designing
 tags: ['CSS' ,'Frontend','Designing' ,'Tool' ]
 permalink: px-to-rem-and-rem-to-px-convertor-tool
 ---
-Tools to convert from px to rem and from rem to px
+Tools to convert from px to rem and from rem to px - Tapan BK
+
 <!--more-->
 
 <img src="{{site.baseurl}}/img/posts/px-rem.png" class="img-thumbnail img-rounded" height="400px" 

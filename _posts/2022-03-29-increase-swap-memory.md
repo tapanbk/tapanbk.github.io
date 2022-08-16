@@ -6,7 +6,8 @@ category: Linux
 tags: ['Linux', 'Server',]
 permalink: Ultimate-guide-to-increase-the-swap-memory-of-Linux
 ---
-Ultimate guide to increase the swap memory in Linux
+Ultimate guide to increase the swap memory in Linux - Tapan BK
+
 <!--more-->
 
 <img

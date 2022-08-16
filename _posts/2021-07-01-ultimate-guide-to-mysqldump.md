@@ -7,7 +7,8 @@ tags: [ 'Mysql', 'Server', 'Database_dump' ]
 permalink: ultimate-guide-to-mysql-dump-with-examples
 ---
 
-Read an article on ultimate guide on mysql dump and some examples
+Read an article on ultimate guide on mysql dump and some examples - Tapan BK
+
 <!--more-->
 
 <img src="{{site.baseurl}}/img/posts/database-dump-2.jpg" class="img-thumbnail img-rounded" height="400px" alt="database-dump">

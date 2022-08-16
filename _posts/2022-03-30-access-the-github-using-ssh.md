@@ -7,7 +7,8 @@ category: Git
 tags: ['Git', 'SSH', 'Server']
 permalink: how-to-access-github-account-using-ssh
 ---
-Ultimate Guide to access GitHub account using SSH
+Ultimate Guide to access GitHub account using SSH - Tapan BK
+
 <!--more-->
 
 <section>

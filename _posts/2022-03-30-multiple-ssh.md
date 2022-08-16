@@ -7,7 +7,8 @@ category: Git
 tags: ['GIT', 'SSH', 'Server']
 permalink: how-to-generate-multiple-ssh-for-different-github-accounts
 ---
-Guide to generate multiple SSH Keys for different GitHub accounts
+Guide to generate multiple SSH Keys for different GitHub accounts - Tapan BK
+
 <!--more-->
 
 <section> 
