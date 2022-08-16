@@ -1,11 +1,11 @@
 ---
 layout: post
 section-type: post
-title:  Ultimate guide on python packaging
+title:  Guide on Python Packages and Modules
 
 category: Python
 tags: ['Python', 'Packaging']
-permalink: ultimate-guide-on-python-packaging
+permalink: guide-on-python-packages-and-modules
 ---
 Ultimate guide on python packaging - Tapan BK
 
