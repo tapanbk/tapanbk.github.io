@@ -218,13 +218,12 @@ assembled from the following sources.
 </section>
 
 <section>
-The lists of directories for searching the packages in the system can be obtained from the sys module
+<p>The lists of directories for searching the packages in the system can be obtained from the sys module</p>
 <pre class="terminal">
     
     import sys
     sys.path
 </pre>
-<p>
 </section>
 
 
