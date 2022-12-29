@@ -25,19 +25,15 @@ can be deployed everywhere.
 </p>
 </section>
 
-
-
 <section>
 <h4>Docker example file</h4>
 <p>Docker file is usually created with the Docker name without any extension. The basic structure of Docker file for 
 Django Project is
 </p>
 <pre class="terminal">
-    
     FROM python:3.10-alpine
-
     ENV PYTHONUNBUFFERED=1
-    
+
     RUN apk update \
         && apk add --no-cache --virtual .build-deps \
         ca-certificates gcc linux-headers musl-dev \
@@ -68,7 +64,6 @@ Django Project is
 <h4>Docker file for production to be run with gunicorn</h4>
 <p>Create a Docker.production file without any file extension</p>
 <pre class="terminal">
-
     FROM python:3.10-alpine
     ENV PYTHONUNBUFFERED=1
     
@@ -109,9 +104,8 @@ Django Project is
 
 <section>
 <h4>Docker compose file</h4>
-<p>Create a docker-compose.yml file.The following docker file consists of redis for caching, and postgres for datatabase </p>
-  <pre class="terminal"> 
-    
+<p>Create a docker-compose.yml file.The following docker file consists of redis for caching, and postgres for database </p>
+  <pre class="terminal">
     version: '3.10'
     volumes:
       dbdata:
@@ -168,39 +162,36 @@ Django Project is
 
 <section>
 <h4>Docker compose production file</h4>
-<p>Create a docker-compose.production.yml file.The following docker file consists of redis for caching.</p>
+<p>Create a docker-compose.production.yml file. The following docker file consists of redis service for caching.</p>
     
-    <pre class="terminal">
-       
-        # image: project-docker-image
+<pre class="terminal">
+    version: '3.10'
     
-        version: '3.10'
-        
+    networks:
+      redis-net:
+    
+    services:
+      redis:
+        image: redis
+        container_name: redis_container
+        command: redis-server
+        ports:
+          - '6379:6379'
         networks:
-          redis-net:
-        
-        services:
-          redis:
-            image: redis
-            container_name: redis_container
-            command: redis-server
-            ports:
-              - '6379:6379'
-            networks:
-              - redis-net
-          api:
-            build:
-              context: .
-              dockerfile: Dockerfile.production
-            ports:
-              - '8000:8000'
-            networks:
-              - redis-net
-            volumes:
-              - .:/home/user_name/project_name
-            env_file: .env
-            container_name: unique_container_name
-    </pre>
+          - redis-net
+      api:
+        build:
+          context: .
+          dockerfile: Dockerfile.production
+        ports:
+          - '8000:8000'
+        networks:
+          - redis-net
+        volumes:
+          - .:/home/user_name/project_name
+        env_file: .env
+        container_name: unique_container_name
+</pre>
 </section>
 
 <section>
