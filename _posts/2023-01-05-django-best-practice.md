@@ -3,7 +3,7 @@ layout: post
 section-type: post
 title: Guide on Best practices on Django
 
-category: Docker
+category: Django
 tags: ['Server', 'Django']
 permalink: guide-on-best-practice-on-django
 ---
