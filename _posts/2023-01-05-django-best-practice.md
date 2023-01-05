@@ -4,7 +4,7 @@ section-type: post
 title: Guide on Best practices on Django
 
 category: Docker
-tags: ['Server', 'Docker']
+tags: ['Server', 'Django']
 permalink: guide-on-best-practice-on-django
 ---
 Guide on Best practices on Django - Tapan BK
