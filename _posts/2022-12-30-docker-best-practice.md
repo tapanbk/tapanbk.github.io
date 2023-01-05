@@ -5,7 +5,7 @@ title: Guide on Best practices on Dockerfile and Docker image
 
 category: Docker
 tags: ['Server', 'Docker']
-permalink: guilde-on-best-practice-on-docker-and-docker-image
+permalink: guide-on-best-practice-on-docker-and-docker-image
 ---
 Guide on Best practices on Dockerfile and Docker image - Tapan BK
 
