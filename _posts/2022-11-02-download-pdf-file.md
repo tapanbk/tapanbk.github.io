@@ -5,7 +5,7 @@ title:  Guide to download protected view only  PDF from Google Drive
 
 category: JavaScript
 tags: ['JavaScript', 'Script']
-permalink: guide to download protected view-only-pdf-from-google-drive
+permalink: guide-to-download-protected-view-only-pdf-from-google-drive
 ---
 Guide to download protected view only  PDF from Google Drive - Tapan BK
 
