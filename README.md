@@ -47,6 +47,12 @@ You can watch it in action [here](https://le4ker.github.io/personal-jekyll-theme
 
 The theme contains documentation in the form of [blog posts](https://le4ker.github.io/personal-jekyll-theme/blog/index.html).
 
+## install the dev dependencies
+```shell
+sudo apt install jekyll
+sudo apt install ruby-dev
+```
+
 ## How to run locally
 
 First, you need to install jekyll and the dependencies of { Personal } by running:
@@ -55,8 +61,13 @@ First, you need to install jekyll and the dependencies of { Personal } by runnin
 ./scripts/install
 ```
 
-Then, you can build and serve your website by simply running:
 
+Then, you can build and serve your website by simply running:
+```shell
+jekyll serve
+```
+
+Or the production build
 ```shell
 ./scripts/serve-production
 ```
@@ -103,3 +114,15 @@ One of the reasons { Personal } is real is the following OSS projects:
         <img src="https://blockchain.info/Resources/buttons/donate_64.png"/>
     </a>
 </div>
+
+
+### Fix the jekyll issue
+
+```shell
+PACKAGES="$(dpkg -l |grep jekyll|cut -d" " -f3|xargs )"
+sudo apt remove --purge $PACKAGES
+
+sudo apt autoremove
+
+sudo gem install jekyll jekyll-feed jekyll-gist jekyll-paginate jekyll-sass-converter jekyll-coffeescript
+```

@@ -14,8 +14,8 @@ Generated UUID using Javascript - Tapan BK
 <img
     src="{{site.baseurl}}/img/posts/uuid-generator.png"
     class="img-thumbnail img-rounded" height="400px" width="100%"
-    title="Generated UUID using Javascript - Tapan BK - Tapan BK"
-    alt=" Generated UUID using Javascript - Tapan BK - Tapan BK">
+    title="Generated UUID using Javascript - Tapan BK"
+    alt=" Generated UUID using Javascript - Tapan BK">
 
 <section>
 <h3>Need of generating the UUID</h3>
