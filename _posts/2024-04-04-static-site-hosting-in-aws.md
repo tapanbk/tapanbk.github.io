@@ -83,7 +83,7 @@ functionality.
 </li>
 </ul>
 
-</section >
+</section>
 <section class="static-site-using-aws"> 
 <h3>Limitations of Static Site Hosting:</h3>
 <ul>
@@ -95,26 +95,26 @@ The server-side rendering or processing is not supported. So, i cannot execute s
 <li><b>No Server-Side Code Execution: </b>
 AWS s3 does not allow user to run the server-side scripting language such as PHP, Python, or Node.js scripts. This limits
 the ability to create the dynamic content or perform the server-side operations on website.
-    </li>
+</li>
 <li><b>Limited Authentication and Authorization: </b>
 Website hosted on AWS s3 required additional configurations or integrations with other services to use the basic authentication and authorization
 mechanisms in website.
 </li>
-
 <li><b>No Support for Server-Side Frameworks: </b>
 The server-side frameworks cannot be configured in the s3. They need to be hosted in separate server environment,
 </li>
 
+<li><b>Storage and Bandwidth Costs: </b>
+Even though AWS s3 offer the cost-effective and bandwidth pricing, AWS can incur significant cost over time for serving 
+the large files and sudden spikes in traffic.
+</li>
 
-<li><b>Storage and Bandwidth Costs:</b>
-Even though AWS s3 offer the cost-effective and bandwidth pricing, AWS can incur significant cost over time for serving the large files and sudden spikes in traffic.
 <li><b>No Server-Side Logging:  </b>
 AWS S3 does not have the built-in server-side logging feature. We need to enable additional services to enable the logging,
 tracks requests and analyze access patters. These are limited compared to traditional web server.
 </li>
 
 <li><b>No SSL/TLS Termination:  </b>
-
 AWS s3 does not allow to use teh SSL/TLS services at the bucket level. We can use the  Amazon CloudFront in front of
 S3 to enable the SSL/TLS to improve the caching and security.
 </li>
@@ -126,22 +126,19 @@ additional advanced configurations and customizations.
 </li>
 
 <li><b>Limited HTTP Headers Control: </b>
-S3 provide
 AWS s3 allows users to set the basic caching options and metadata for objects which allows users to have less control over
 advanced HTTP headers in comparison to using a traditional web server. AWS s3 provides the limited control
 over HTTP headers such as caching directives, content-types and content-disposition headers.
 </li>
 
-
-<li><b> CORS Limitations: </b>
+<li><b>CORS Limitations: </b>
 Cross-Origin Resource Sharing (CORS) rules in AWS S3 are limited compared to a traditional web server.
 While you can still configure CORS rules to allow or restrict cross-origin requests, the options for fine-grained
 control and complex CORS  configurations  as in traditional web server may be limited.
-
 </li>
 </ul>
-
 </section>
+
 <section>
 <h3>AWS Services for Static Site Hosting:</h3>
 <h4><b>Amazon S3 (Simple Storage Service): </b></h4>
@@ -151,7 +148,6 @@ used for storing media files and static website files such as HTML, CSS, JavaScr
 upload, manage, and serve static content for your website.
 </p>
 </section>
-
 <section>
 <h4><b>Amazon CloudFront: </b></h4>
 <p>
