@@ -20,7 +20,7 @@ alt="Comprehensive tutorial on hosting the static site in AWS using  S3, cloudfr
 
 
 <section>
-This is the part 1 of comprehensive tutorial on hosting the static site in AWS using AWS s3, AWS cloudfront, AWS Route53 and AWS certificate 
+This is the part 1 of 2 of comprehensive tutorial on hosting the static site in AWS using AWS s3, AWS cloudfront, AWS Route53 and AWS certificate 
 manager.
 </section>
 
@@ -42,7 +42,7 @@ manager.
 </section>
 
 <section>
-<p>In this tutorial, we will learn explore about creating the S3 bucket, updating the block settings, enabling the
+<p>In this tutorial, we will learn and explore about creating the S3 bucket, updating the block settings, enabling the
 static website uploading index and error document.
 The further steps to create SSL/TLS certificate, cloudfront distribution and Route53 will be explored in next tutorial.
 </p>
@@ -110,7 +110,7 @@ Enable Static Website - Tapan BK" width="90%" class="static-site"/>
 <h4>Steps to enable static website hosting.</h4>
 <ol>
 <li>Sign in to the <b>AWS Management Console</b> and open the <b>Amazon S3 console</b> at 
-<a href="https://console.aws.amazon.com/s3/." target="_blank">https://console.aws.amazon.com/s3/.</a></li>
+<a href="https://console.aws.amazon.com/s3/" target="_blank">https://console.aws.amazon.com/s3/</a></li>
 <li>You can see te list of <b>bucket</b>. Choose the name of the bucket that you want to enable static website hosting.</li>
 <li>Choose <b>Properties</b> tab.</li>
 <li>Scroll upto the <b>Static website hosting</b> section, choose <b>Edit</b>.</li>
@@ -223,7 +223,7 @@ static website, you need to create the index document and upload that index docu
 <li>Create the index document, in our case index.html.</li>
 <li>Save the <b>index.html</b> file locally.</li>
 <li>Sign in to the <b>AWS Management Console</b> and open the  <b>Amazon S3 console</b> at 
-<a href="https://console.aws.amazon.com/s3/." target="_blank">https://console.aws.amazon.com/s3/.</a></li>
+<a href="https://console.aws.amazon.com/s3/" target="_blank">https://console.aws.amazon.com/s3/</a></li>
 <li>In the <b>bucket list</b>, choose the bucket that will be used for static website</li>
 <li>To upload the index document in the bucket, do on of the following:
     <ul>
@@ -257,7 +257,7 @@ static website, you need to create the error document and upload that error docu
 <li>Create the error document, in our case <b>error.html</b>.</li>
 <li>Save the <b>error.html</b> file locally.</li>
 <li>Sign in to the <b>AWS Management Console</b> and open the  <b>Amazon S3 console</b> at 
-<a href="https://console.aws.amazon.com/s3/." target="_blank">https://console.aws.amazon.com/s3/.</a></li>
+<a href="https://console.aws.amazon.com/s3/" target="_blank">https://console.aws.amazon.com/s3/</a></li>
 <li>In the <b>bucket list</b>, choose the bucket that will be used for static website</li>
 <li>To upload the error document in the bucket, do on of the following:
     <ul>
@@ -281,7 +281,7 @@ static website, you need to create the error document and upload that error docu
 <h4>Steps to find the website endpoint</h4>
 <ol>
       <li>Sign in to the <b>AWS Management Console</b> and open the <b>Amazon S3 console</b> at 
-    <a href="https://console.aws.amazon.com/s3/." target="_blank">https://console.aws.amazon.com/s3/.</a></li>
+    <a href="https://console.aws.amazon.com/s3/" target="_blank">https://console.aws.amazon.com/s3/</a></li>
     <li>In the <b>bucket list</b>, choose the bucket that will be used for static website</li>
     <li>
        Choose  <b>Properties</b> 
@@ -299,8 +299,13 @@ The endpoint will be similar to http://<b>bucket-name</b>.s3-website-<b>region</
 <section>
 <h3>Final Notes</h3>
 <p>You might have a domain like <a href="https://tapanbk.com.np">tapanbk.com.np</a> and you may want to configure your
-the aws static website to use the domain name of the choice. We will explore about using the own domain to use the
-static site content from AWS in next part of this tutorial.
+the aws static website to use the domain name of the choice.
+</p>
+
+<p>
+Explore more about this in part 2, Please visit
+<a href="{{site.baseurl}}/comprehensive-tutorial-on-hosting-the-static-site-in-aws-using-s3-cloudfront-certificate-manager-and-route53-part-2">
+Comprehensive tutorial on hosting the static site in AWS using  S3, cloudfront, Certificate Manager and Route53 - part 2 </a>
 </p>
 </section>
 

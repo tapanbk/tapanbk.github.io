@@ -259,8 +259,12 @@ Regularly review and optimize costs using AWS Cost Explorer and AWS Trusted Advi
 </section>
 
 <section>
-The comprehensive guide on hosting static site in AWS using AWS s3, AWS cloudfront, AWS Route53 and AWS certificate 
-manager will be available soon. 
+
+<p>
+If you want to explore and learn about hosting static site in AWS in depth, Please visit
+<a href="{{site.baseurl}}/comprehensive-tutorial-on-hosting-the-static-site-in-aws-using-s3-cloudfront-certificate-manager-and-route53-part-1">
+Comprehensive tutorial on hosting the static site in AWS using  S3, cloudfront, Certificate Manager and Route53 - part 1 </a>
+</p>
 </section>
 
 <style>
