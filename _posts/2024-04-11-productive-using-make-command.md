@@ -331,7 +331,7 @@ $ sign followed by curly braces like <span class="important">${VARIABLE_NAME} </
 
 The above Makefile contains .env as include .env.  It was included to ensure the access to environment variables
 stored in an .env file. This allows Make to use these variables in its commands. 
-For example, the name of virtual environment or to pass in span class="important">${DBNAME}</span> to psql
+For example, the name of virtual environment or to pass in <span class="important">${DBNAME}</span> to psql
 </p>
 
 <p>
