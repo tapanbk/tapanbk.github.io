@@ -18,6 +18,14 @@ class="img-thumbnail img-rounded" height="400px" width="100%"
 title="Comprehensive Guide on Microservices - Tapan BK"
 alt="Comprehensive Guide on Microservices- Tapan BK">
 
+
+<section>
+<p>This is the part of 1 of 2 of the microservices. If you are interested about using Flask for the microservices, please visit
+<a href="{{site.baseurl}}/building-microservices-with-flask">Building Microservices with Flask</a> which is part 2 of 2 on
+microservices
+</p>
+</section>
+
 <section>
 <h3>What is microservices?</h3>
 <p>A microservice is a small, independent, and self-contained service that performs a specific task. Microservice
@@ -455,6 +463,12 @@ different services.
 
 </section>
 
+<section>
+<p>This is the end of 1 of 2 of the microservices. If you are interested about using Flask for the microservices, please visit
+<a href="{{site.baseurl}}/building-microservices-with-flask">Building Microservices with Flask</a> which is part 2 of 2 on
+microservices
+</p>
+</section>
 
 <style>
 
