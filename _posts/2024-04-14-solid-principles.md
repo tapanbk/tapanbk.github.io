@@ -2,8 +2,8 @@
 layout: post
 section-type: post
 title: Extensive guide on Solid principle in software development with examples
-category: AWS
-tags: [ 'Solid Principle' ]
+category: Programming
+tags: [ 'Architecture', 'Programming', 'Software' ]
 permalink: extensive-guide-on-solid-principles-in-software-development-with-example
 ---
 
