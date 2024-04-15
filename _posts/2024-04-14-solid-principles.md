@@ -135,43 +135,43 @@ demonstrate how to design this system following the OCP:
 
 <pre>
 <code>
-    from abc import ABC, abstractmethod
+from abc import ABC, abstractmethod
 
-    # Abstract base class for shapes
-    class Shape(ABC):
-        @abstractmethod
-        def area(self):
-            pass
-    
-    # Concrete implementations of shapes
-    class Rectangle(Shape):
-        def __init__(self, width, height):
-            self.width = width
-            self.height = height
-    
-        def area(self):
-            return self.width * self.height
-    
-    class Circle(Shape):
-        def __init__(self, radius):
-            self.radius = radius
-    
-        def area(self):
-            return 3.14 * self.radius * self.radius
-    
-    # A class responsible for calculating the total area of shapes
-    class AreaCalculator:
-        @staticmethod
-        def calculate_total_area(shapes):
-            total_area = 0
-            for shape in shapes:
-                total_area += shape.area()
-            return total_area
-    
-    # Example usage
-    shapes = [Rectangle(5, 4), Circle(3)]
-    total_area = AreaCalculator.calculate_total_area(shapes)
-    print("Total area:", total_area)
+# Abstract base class for shapes
+class Shape(ABC):
+    @abstractmethod
+    def area(self):
+        pass
+
+# Concrete implementations of shapes
+class Rectangle(Shape):
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
+
+    def area(self):
+        return self.width * self.height
+
+class Circle(Shape):
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        return 3.14 * self.radius * self.radius
+
+# A class responsible for calculating the total area of shapes
+class AreaCalculator:
+    @staticmethod
+    def calculate_total_area(shapes):
+        total_area = 0
+        for shape in shapes:
+            total_area += shape.area()
+        return total_area
+
+# Example usage
+shapes = [Rectangle(5, 4), Circle(3)]
+total_area = AreaCalculator.calculate_total_area(shapes)
+print("Total area:", total_area)
 
 </code>
 </pre>
@@ -211,29 +211,29 @@ promoting polymorphism and code reuse.
 
 <pre>
 <code>
-    class Bird:
+class Bird:
     def fly(self):
         pass
 
-    class Sparrow(Bird):
-        def fly(self):
-            print("Sparrow flying")
-    
-    class Ostrich(Bird):
-        def fly(self):
-            # Ostriches cannot fly, so this method should not be implemented for them
-            raise NotImplementedError("Ostrich cannot fly")
-    
-    # Function to perform flying action for any bird
-    def perform_fly(bird):
-        bird.fly()
-    
-    # Example usage
-    sparrow = Sparrow()
-    ostrich = Ostrich()
-    
-    perform_fly(sparrow)  # Output: Sparrow flying
-    perform_fly(ostrich)  # Raises NotImplementedError: Ostrich cannot fly
+class Sparrow(Bird):
+    def fly(self):
+        print("Sparrow flying")
+
+class Ostrich(Bird):
+    def fly(self):
+        # Ostriches cannot fly, so this method should not be implemented for them
+        raise NotImplementedError("Ostrich cannot fly")
+
+# Function to perform flying action for any bird
+def perform_fly(bird):
+    bird.fly()
+
+# Example usage
+sparrow = Sparrow()
+ostrich = Ostrich()
+
+perform_fly(sparrow)  # Output: Sparrow flying
+perform_fly(ostrich)  # Raises NotImplementedError: Ostrich cannot fly
 </code>
 </pre>
 
@@ -267,51 +267,50 @@ to certain clients.</p>
 
 <pre>
 <code>
-    from abc import ABC, abstractmethod
-    
-    # Define separate interfaces for printer and scanner functionalities
-    class Printer(ABC):
-        @abstractmethod
-        def print_document(self, document):
-            pass
-    
-    class Scanner(ABC):
-        @abstractmethod
-        def scan_document(self):
-            pass
-    
-    # Concrete implementations of printer and scanner
-    class LaserPrinter(Printer):
-        def print_document(self, document):
-            print("Printing document using laser printer:", document)
-    
-    class InkjetPrinter(Printer):
-        def print_document(self, document):
-            print("Printing document using inkjet printer:", document)
-    
-    class FlatbedScanner(Scanner):
-        def scan_document(self):
-            print("Scanning document using flatbed scanner")
-    
-    class SheetfedScanner(Scanner):
-        def scan_document(self):
-            print("Scanning document using sheetfed scanner")
-    
-    # A class representing a multifunction printer that implements both printer and scanner interfaces
-    class MultifunctionPrinter(Printer, Scanner):
-        def print_document(self, document):
-            print("Printing document using multifunction printer:", document)
-    
-        def scan_document(self):
-            print("Scanning document using multifunction printer")
-    
-    # Example usage
-    laser_printer = LaserPrinter()
-    laser_printer.print_document("Example document")
-    
-    flatbed_scanner = FlatbedScanner()
-    flatbed_scanner.scan_document()
+from abc import ABC, abstractmethod
 
+# Define separate interfaces for printer and scanner functionalities
+class Printer(ABC):
+    @abstractmethod
+    def print_document(self, document):
+        pass
+
+class Scanner(ABC):
+    @abstractmethod
+    def scan_document(self):
+        pass
+
+# Concrete implementations of printer and scanner
+class LaserPrinter(Printer):
+    def print_document(self, document):
+        print("Printing document using laser printer:", document)
+
+class InkjetPrinter(Printer):
+    def print_document(self, document):
+        print("Printing document using inkjet printer:", document)
+
+class FlatbedScanner(Scanner):
+    def scan_document(self):
+        print("Scanning document using flatbed scanner")
+
+class SheetfedScanner(Scanner):
+    def scan_document(self):
+        print("Scanning document using sheetfed scanner")
+
+# A class representing a multifunction printer that implements both printer and scanner interfaces
+class MultifunctionPrinter(Printer, Scanner):
+    def print_document(self, document):
+        print("Printing document using multifunction printer:", document)
+
+    def scan_document(self):
+        print("Scanning document using multifunction printer")
+
+# Example usage
+laser_printer = LaserPrinter()
+laser_printer.print_document("Example document")
+
+flatbed_scanner = FlatbedScanner()
+flatbed_scanner.scan_document()
 </code>
 </pre>
 </section>
@@ -347,39 +346,39 @@ design the system using DIP:</p>
 <pre>
 <code>
 
-    from abc import ABC, abstractmethod
-    
-    # Define an abstract interface for notification delivery
-    class NotificationProvider(ABC):
-        @abstractmethod
-        def send_notification(self, message):
-            pass
-    
-    # Concrete implementations for email and SMS notification providers
-    class EmailNotificationProvider(NotificationProvider):
-        def send_notification(self, message):
-            print("Sending email notification:", message)
-    
-    class SMSNotificationProvider(NotificationProvider):
-        def send_notification(self, message):
-            print("Sending SMS notification:", message)
-    
-    # High-level module responsible for sending notifications using the NotificationProvider interface
-    class NotificationService:
-        def __init__(self, notification_provider):
-            self.notification_provider = notification_provider
-    
-        def send_notification(self, message):
-            self.notification_provider.send_notification(message)
-    
-    # Example usage
-    email_provider = EmailNotificationProvider()
-    notification_service = NotificationService(email_provider)
-    notification_service.send_notification("Hello, this is an email notification")
-    
-    sms_provider = SMSNotificationProvider()
-    notification_service = NotificationService(sms_provider)
-    notification_service.send_notification("Hello, this is an SMS notification")
+from abc import ABC, abstractmethod
+
+# Define an abstract interface for notification delivery
+class NotificationProvider(ABC):
+    @abstractmethod
+    def send_notification(self, message):
+        pass
+
+# Concrete implementations for email and SMS notification providers
+class EmailNotificationProvider(NotificationProvider):
+    def send_notification(self, message):
+        print("Sending email notification:", message)
+
+class SMSNotificationProvider(NotificationProvider):
+    def send_notification(self, message):
+        print("Sending SMS notification:", message)
+
+# High-level module responsible for sending notifications using the NotificationProvider interface
+class NotificationService:
+    def __init__(self, notification_provider):
+        self.notification_provider = notification_provider
+
+    def send_notification(self, message):
+        self.notification_provider.send_notification(message)
+
+# Example usage
+email_provider = EmailNotificationProvider()
+notification_service = NotificationService(email_provider)
+notification_service.send_notification("Hello, this is an email notification")
+
+sms_provider = SMSNotificationProvider()
+notification_service = NotificationService(sms_provider)
+notification_service.send_notification("Hello, this is an SMS notification")
 
 </code>
 </pre>
@@ -399,8 +398,6 @@ design the system using DIP:</p>
 </section>
 
 <style>
-    ol.major-steps{
-    text-decoration: none;
     }
     .major-steps li{
     margin-bottom:30px
@@ -409,8 +406,4 @@ design the system using DIP:</p>
     ol li{
     margin-bottom:30px
     }
-    img.static-site{
-    margin-bottom: 30px !important;
-    }
-
 </style>
