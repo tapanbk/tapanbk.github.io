@@ -1,13 +1,13 @@
 <section id="{{ page.section-type }}" class="container-fluid content-section text-center">
   <div class="row">
-    <div class="col-md-10 col-md-offset-1">
+    <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2">
       {{ page.content | markdownify }}
     </div>
   </div>
 
   <div class="row contact-details">
     {% if site.email %}
-    <div class="col-md-10 col-md-offset-1 contact-details__item">
+    <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 contact-details__item">
       <div>
         <a href="mailto:{{ site.email }}" target="_blank">
         <span class="contact-details__item__icon">
@@ -17,7 +17,7 @@
     </div>
     {% endif %}
     {% if site.phone %}
-    <div class="col-md-10 col-md-offset-1 contact-details__item">
+    <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 contact-details__item">
       <div>
         <a href="tel:{{ site.phone }}" target="_blank">
         <span class="contact-details__item__icon">

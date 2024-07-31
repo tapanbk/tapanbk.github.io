@@ -294,8 +294,9 @@ a {
         //text-align: center;
         margin: 0 0 25px;
         font-size: 18px;
-        line-height: 1.5;
+        line-height: 1.7;
         list-style-position: inside;
+        margin-bottom: 1.5rem;
     }
     pre {
       padding: 0;
@@ -701,8 +702,9 @@ section{
             margin-bottom: 5rem;
         }
         ol li, ul li{
-
             font-size: 2.5rem;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
         }
         &#contact-message{
             text-align: center;
@@ -713,6 +715,8 @@ section{
     }
     ol li, ul li{
         font-size: 2.5rem;
+        line-height: 1.7;
+        margin-bottom: 1.5rem;
     }
     h2, h3, h4, h5{
         margin-top: 4rem;
