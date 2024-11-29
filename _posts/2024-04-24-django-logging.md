@@ -3,7 +3,7 @@ layout: post
 section-type: post
 title: Extensive guide on django logging
 category: Programming
-tags: [ Programming', 'Software', 'Django', 'Python' ]
+tags: [ 'Programming', 'Software', 'Django', 'Python' ]
 permalink: extensive-guide-django-logging
 ---
 
