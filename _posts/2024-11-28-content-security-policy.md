@@ -256,7 +256,7 @@ console.log('Secure inline script');
 
 <section>
 <p>
-Explore more on Content security policy in inline scripts and styles  in part 2 that mentions, Please visit
+Explore more on Content security policy in inline scripts and styles  in part 2, Please visit
 <a href="{{site.baseurl}}/content-security-policy-part-2">
 Content Security Policy (CSP): A Shield Against Modern Web Vulnerabilities (Part 2) </a>
 </p>

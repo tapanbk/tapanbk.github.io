@@ -129,3 +129,12 @@ console.log('Hello, World!');
     </p>
 </section>
 
+
+<section>
+<p>
+If you happened to directly come to this page, Explore the first part of this series on content security policy, Please visit
+<a href="{{site.baseurl}}/content-security-policy-part-1">
+Content Security Policy (CSP): A Shield Against Modern Web Vulnerabilities (Part 1) </a>
+</p>
+</section>
+
