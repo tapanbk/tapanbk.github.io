@@ -1,25 +1,25 @@
 ---
 layout: post
 section-type: post
-title: Content Security Policy (CSP) - A Shield Against Modern Web Vulnerabilities - Part 1
+title: Content Security Policy (CSP) overview 
 category: Programming
-tags: [ 'Programming', 'Frontend', 'JavaScript' ]
-permalink: content-security-policy-part-1
+tags: [ 'Programming', 'Security', 'JavaScript', 'Frontend', 'Backend' ]
+permalink: content-security-policy-overview
 ---
 
-Content Security Policy (CSP): A Shield Against Modern Web Vulnerabilities - Tapan BK
+Content Security Policy (CSP) overview - A Shield Against Modern Web Vulnerabilities - Tapan BK
 
 <!--more-->
 
 <img
 src="{{site.baseurl}}/img/posts/content-security-policy.png"
 class="img-thumbnail img-rounded" height="400px" width="100%"
-title="Extensive guide on django logging - Tapan BK"
-alt="Content Security Policy (CSP) - Tapan BK">
+title="Content Security Policy (CSP) overview - A Shield Against Modern Web Vulnerabilities - Tapan BK"
+alt="Content Security Policy (CSP) overview - A Shield Against Modern Web Vulnerabilities - Tapan BK">
 
 
 <section>
-    <h1>Content Security Policy (CSP)</h1>
+    <h1>Content Security Policy (CSP):  A Shield Against Modern Web Vulnerabilities</h1>
     <p>
         The internet has transformed the way we live, work, and communicate, but it also comes with its fair share of challenges—especially 
         when it comes to security. As cyberattacks grow more sophisticated, web developers must adopt robust mechanisms to protect their 
@@ -136,7 +136,6 @@ alt="Content Security Policy (CSP) - Tapan BK">
 </section>
 
 
-
 <section>
 <p>A CSP should be delivered to the browser in the Content-Security-Policy response header.
 It should be set on all responses to all requests, not just the main document.</p>
@@ -145,53 +144,6 @@ The policy is specified as a series of directives, separated by semi-colons. Eac
 of the security policy. Each directive has a name, followed by a space, followed by a value. Different directives
 can have different syntaxes.
 </p>
-</section>
-
-<section>
-    <h2>Step-by-Step: Setting Up CSP</h2>
-    <p>Implementing CSP might seem intimidating at first, but it’s a straightforward process. Here’s a step-by-step guide:</p>
-    <h3>1. Add the CSP Header</h3>
-    <p>
-        The easiest way to enable CSP is by adding the <code>Content-Security-Policy</code> header in your server configuration. Here’s how it’s done:
-    </p>
-    <ul>
-        <li><strong>For Apache:</strong></li>
-        <pre>
-<code>Header set Content-Security-Policy "default-src 'self'; img-src https://*; script-src 'self' https://cdn.scripts.com"</code>
-</pre>
-        <li><strong>For Nginx:</strong></li>
-        <pre>
-<code>add_header Content-Security-Policy "default-src 'self'; img-src https://*; script-src 'self' https://cdn.scripts.com";</code>
-</pre>
-    </ul>
-    <h3>2. Use Report-Only Mode for Testing</h3>
-    <p>
-        Start with <strong>report-only mode</strong> to avoid accidentally breaking your website. This mode logs violations without blocking them, 
-        giving you a chance to identify issues before enforcing the policy. Here’s how it looks:
-    </p>
-    <pre>
-<code>Content-Security-Policy-Report-Only: default-src 'self'; report-uri https://your-site.com/csp-reports</code>
-</pre>
-    <h3>3. Handle Inline Scripts and Styles</h3>
-    <p>
-        If your website relies on inline scripts or styles, CSP will block them unless explicitly allowed. Use <code>nonce</code> or 
-        <code>hash</code> to permit specific inline content safely:
-    </p>
-    <pre>
-<code>Content-Security-Policy: script-src 'self' 'nonce-unique123';</code>
-</pre>
-    <p>Corresponding script tag:</p>
-    <pre>
-<code>&lt;script nonce="unique123"&gt;
-console.log('Secure inline script');
-&lt;/script&gt;
-</code>
-</pre>
-    <h3>4. Gradually Refine Your Policy</h3>
-    <p>
-        As you monitor reports and test your policy, start tightening the rules. For instance, replace broad directives like <code>'unsafe-inline'</code> 
-        with more specific ones like <code>'nonce'</code> or trusted domains.
-    </p>
 </section>
 
 <section>
@@ -256,8 +208,24 @@ console.log('Secure inline script');
 
 <section>
 <p>
-Explore more on Content security policy in inline scripts and styles  in part 2, Please visit
-<a href="{{site.baseurl}}/content-security-policy-part-2">
-Content Security Policy (CSP): A Shield Against Modern Web Vulnerabilities (Part 2) </a>
+Want to Explore more on Content security policy - A Shield Against Modern Web Vulnerabilities, Please visit
 </p>
+<ol>
+
+<li>
+<a href="{{site.baseurl}}/content-security-policy-part-in-inline-styles-and-scripts">
+Content Security Policy  in inline styles and scripts</a>
+</li>
+
+<li>
+<a href="{{site.baseurl}}/content-security-policy-part-using-hash-methods">
+Content Security Policy using Hash methods</a>
+</li>
+
+<li>
+<a href="{{site.baseurl}}/content-security-policy-in-django-app">
+Content Security Policy in Django App</a>
+</li>
+</ol>
+
 </section>
